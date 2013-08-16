@@ -1,0 +1,79 @@
+ID,TERM,DESCRIPTION,TYPE_ID,CITATION,ATTRIBUTE_TYPE
+0,STO-2G,STO-2G minimal basis set,1,,basis_set
+1,STO-3G,STO-3G minimal basis set,1,"W.J. Hehre, R.F. Stewart and J.A. Pople, J. Chem. Phys. 2657 (1969). W.J. Hehre, R. Ditchfield, R.F. Stewart, J.A. Pople, J. Chem. Phys.  2769 (1970). W.J. Pietro, B.A. Levy, W.J. Hehre and R.F. Stewart, J. Am. Chem. Soc. 19, 2225 (1980). W.J. Pietro and W.J. Hehre, J. Comp. Chem. 4, 241 (1983).",basis_set
+2,STO-4G,STO-4G minimal basis set,1,,basis_set
+3,STO-6G,STO-6G minimal basis set,1,,basis_set
+4,3-21G,3-21G (Pople basis set),2,,basis_set
+5,4-21G,4-21G (Pople basis set),2,,basis_set
+6,4-31G,4-31G (Pople basis set),2,"R. Ditchfield, W.J. Hehre and J.A. Pople, J. Chem. Phys. 54, 724 (1971).",basis_set
+7,6-21G,6-21G (Pople basis set),2,,basis_set
+8,6-31G,6-31G (Pople basis set),2,,basis_set
+9,6-311G,6-311G (Pople basis set),2,,basis_set
+10,LANL08,Uncontracted basis set,2,,basis_set
+11,LANL08(f),Uncontracted basis set + f polarization,2,,basis_set
+12,LANL2-[6s4p4d2f],Lanl2-[6s4p4d2f],2,,basis_set
+13,LANL2DZ ECP,DZ Double Zeta Basis Set designed for an ECP,2,,basis_set
+14,LANL2DZ+1d1f,LANL2DZ+1d1f ,2,,basis_set
+15,LANL2DZ+2s2p2d2f,Lanl2DZ+2s2p2d2f,2,,basis_set
+16,LANL2DZdp ECP,DZP Double Zeta + Polarization + Diffuse ECP,2,,basis_set
+17,LANL2DZdp ECP Polarization,1P Polarization Functions,2,,basis_set
+18,LANL2TZ,LANL2TZ,2,,basis_set
+19,LANL2TZ(f),TZ triple zeta basis set designed for an ECP + f polarization,2,,basis_set
+20,cc-pVDZ,cc-pVDZ correlation-consistent polarized basis set,2,,basis_set
+21,cc-pVTZ,cc-pVTZ correlation-consistent polarized basis set,2,,basis_set
+22,cc-pVQZ,cc-pVQZ correlation-consistent polarized basis set,2,,basis_set
+23,cc-pV5Z,cc-pV5Z correlation-consistent polarized basis set,2,,basis_set
+24,cc-pV6Z,cc-pV6Z correlation-consistent polarized basis set,2,,basis_set
+25,cc-pV8Z,cc-pV8Z correlation-consistent polarized basis set,2,,basis_set
+26,cc-pV9Z,cc-pV9Z correlation-consistent polarized basis set,2,,basis_set
+27,cc-pVDZ-RI,cc-pVDZ-RI correlation-consistent polarized basis set,2,,basis_set
+28,cc-pVTZ-RI,cc-pVTZ-RI correlation-consistent polarized basis set,2,,basis_set
+29,cc-pVQZ-RI,cc-pVQZ-RI correlation-consistent polarized basis set,2,,basis_set
+30,cc-pV5Z-RI,cc-pV5Z-RI correlation-consistent polarized basis set,2,,basis_set
+31,cc-pV6Z-RI,cc-pV6Z-RI correlation-consistent polarized basis set,2,,basis_set
+32,cc-pCVDZ,cc-pCVDZ correlation-consistent polarized basis set,2,,basis_set
+33,c-pCVTZ,cc-pCVTZ correlation-consistent polarized basis set,2,,basis_set
+34,cc-pCVQZ,cc-pCVQZ correlation-consistent polarized basis set,2,,basis_set
+35,cc-pCV5Z,cc-pCV5Z correlation-consistent polarized basis set,2,,basis_set
+36,cc-pCV6Z,cc-pCV6Z correlation-consistent polarized basis set,2,,basis_set
+37,cc-pV(D+d)Z,cc-pV(D+d)Z correlation-consistent polarized basis set,2,,basis_set
+38,cc-pV(T+d)Z,cc-pV(T+d)Z correlation-consistent polarized basis set,2,,basis_set
+39,cc-pV(Q+d)Z,cc-pV(Q+d)Z correlation-consistent polarized basis set,2,,basis_set
+40,c-pV(5+d)Z,cc-pV(5+d)Z correlation-consistent polarized basis set,2,,basis_set
+41,cc-pV(6+d)Z,cc-pV(6+d)Z correlation-consistent polarized basis set,2,,basis_set
+42,aug-cc-pVDZ,aug-cc-pVDZ correlation-consistent polarized basis set,2,,basis_set
+43,aug-cc-pVTZ,aug-cc-pVTZ correlation-consistent polarized basis set,2,,basis_set
+44,aug-cc-pVQZ,aug-cc-pVQZ correlation-consistent polarized basis set,2,,basis_set
+45,aug-cc-pV5Z,aug-cc-pV5Z correlation-consistent polarized basis set,2,,basis_set
+46,aug-cc-pV6Z,aug-cc-pV6Z correlation-consistent polarized basis set,2,,basis_set
+47,aug-cc-pV8Z,aug-cc-pV8Z correlation-consistent polarized basis set,2,,basis_set
+48,aug-cc-pV9Z,aug-cc-pV9Z correlation-consistent polarized basis set,2,,basis_set
+49,aug-cc-pVDZ-RI,aug-cc-pVDZ-RI correlation-consistent polarized basis set,2,,basis_set
+50,aug-cc-pVTZ-RI,aug-cc-pVTZ-RI correlation-consistent polarized basis set,2,,basis_set
+51,aug-cc-pVQZ-RI,aug-cc-pVQZ-RI correlation-consistent polarized basis set,2,,basis_set
+52,aug-cc-pV5Z-RI,aug-cc-pV5Z-RI correlation-consistent polarized basis set,2,,basis_set
+53,aug-cc-pV6Z-RI,aug-cc-pV6Z-RI correlation-consistent polarized basis set,2,,basis_set
+54,aug-cc-pCVDZ,aug-cc-pCVDZ correlation-consistent polarized basis set,2,,basis_set
+55,aug-cc-pCVTZ,aug-cc-pCVTZ correlation-consistent polarized basis set,2,,basis_set
+56,aug-cc-pCVQZ,aug-cc-pCVQZ correlation-consistent polarized basis set,2,,basis_set
+57,aug-cc-pCV5Z,aug-cc-pCV5Z correlation-consistent polarized basis set,2,,basis_set
+58,aug-cc-pCV6Z,aug-cc-pCV6Z correlation-consistent polarized basis set,2,,basis_set
+59,aug-cc-pV(D+d)Z,aug-cc-pV(D+d)Z correlation-consistent polarized basis set,2,,basis_set
+60,aug-cc-pV(T+d)Z,aug-cc-pV(T+d)Z correlation-consistent polarized basis set,2,,basis_set
+61,aug-cc-pV(Q+d)Z,aug-cc-pV(Q+d)Z correlation-consistent polarized basis set,2,,basis_set
+62,aug-cc-pV(5+d)Z,aug-cc-pV(5+d)Z correlation-consistent polarized basis set,2,,basis_set
+63,aug-cc-pV(6+d)Z,aug-cc-pV(6+d)Z correlation-consistent polarized basis set,2,,basis_set
+64,aug-cc-pwCVDZ,DZP Double Zeta + polarization + Tight core,2,,basis_set
+65,aug-cc-pwCVTZ,TZ2PD Triple Zeta + polarization + Diffuse on all atoms,2,,basis_set
+66,aug-cc-pwCVQZ,QZ3PD Quadruple Zeta + polarization + Diffuse on all atoms,2,,basis_set
+67,aug-cc-pwCV5Z,5Z4PD Quintuple Zeta + polarization + Diffuse on all atoms,2,,basis_set
+68,aug-pc-0,aug-pc-0 basis set,2,,basis_set
+69,aug-pc-1,aug-pc-1 basis set,2,,basis_set
+70,aug-pc-2,aug-pc-2 basis set,2,,basis_set
+71,aug-pc-3,aug-pc-3 basis set,2,,basis_set
+72,aug-pc-4,aug-pc-4 basis set,2,,basis_set
+73,Ahlrichs Coulomb fitting,DFT Coulomb fitting,2,,basis_set
+74,Ahlrichs Polarization,1P polarization functions,2,,basis_set
+75,Ahlrichs pvDZ,VDZP Valence Double Zeta + Polarization on all atoms,2,,basis_set
+76,Ahlrichs VDZ,VDZ Valence Double Zeta: 2 Funct.'s/Valence AO,2,,basis_set
+77,Ahlrichs VTZ,VTZ Valence Triple Zeta: 3 Funct.'s/Valence AO,2,,basis_set

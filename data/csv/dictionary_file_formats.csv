@@ -1,0 +1,65 @@
+ID,TERM,DESCRIPTION,SOTWARE,ATTRIBUTE_TYPE
+1,ADF input,ADF input file format,ADF,file_format
+2,ADF output,ADF output file format,ADF,file_format
+3,ADF Tape41,ADF Tape41 file format,ADF,file_format
+4,AMBER library,AMBER OFF library format,AMBER,file_format
+5,AMBER MD input,AMBER MD input format,AMBER,file_format
+6,AMBER MD output,AMBER MD output format,AMBER,file_format
+7,AMBER parmtop,AMBER parameter/topology format,AMBER,file_format
+8,AMBER restart,AMBER restart format,AMBER,file_format
+10,AMBER trajectory (ASCII),AMBER trajectory (ASCII) format,AMBER,file_format
+11,AMBER trajectory (binary),AMBER trajectory (binary) format,AMBER,file_format
+12,AMBER trajectory (Scripps Binpos),AMBER trajectory (Scripps Binpos) format. Binpos files have a 4 byte header followed by binpos frame records. Each frame record is an integer (number of atoms) followed by 3*natom.,AMBER,file_format
+13,AMBER trajectory (NetCDF),AMBER trajectory (NetCDF) format,AMBER,file_format
+14,BMP,Bitmap image file,,file_format
+15,CHARMM coordinates,CHARMM coordinates file format,CHARMM,file_format
+16,CHARMM input,CHARMM input file format,CHARMM,file_format
+17,CHARMM output,CHARMM output file format,CHARMM,file_format
+18,CML,Chemical Markup Language file format,,file_format
+19,CSV,Comma-separated value (CSV) file format,,file_format
+20,DCD trajectory,DCD trajectory file format,CHARMM,file_format
+21,Fasta,Fasta sequence file format,,file_format
+22,GAMESS input,GAMESS input file format,GAMESS,file_format
+23,GAMESS output,GAMESS output file format,GAMESS,file_format
+24,GAMESS-UK input,GAMESS-UK input file format,GAMESS,file_format
+25,GAMESS-UK output,GAMESS-UK output file format,GAMESS,file_format
+26,GAUSSIAN chk,GAUSSIAN chk file format,Gaussian,file_format
+27,GAUSSIAN com,GAUSSIAN input file format (.com),Gaussian,file_format
+28,GAUSSIAN cube,GAUSSIAN cube file format,Gaussian,file_format
+29,GAUSSIAN log,GAUSSIAN log/output file format,Gaussian,file_format
+30,GAUSSIAN restart,GAUSSIAN restart file format,Gaussian,file_format
+31,GIF,GIF (Graphics Interchange File) image file,,file_format
+32,GROMACS gro,GROMACS gro coordinate file format,GROMACS,file_format
+33,GROMACS include topology,GROMACS include topology,GROMACS,file_format
+34,GROMACS index,GROMACS index file format,GROMACS,file_format
+35,GROMACS MD input,GROMACS MD input,GROMACS,file_format
+36,GROMACS MD output,GROMACS MD output,GROMACS,file_format
+37,GROMACS restart,GROMACS restart,GROMACS,file_format
+38,GROMACS system topology,GROMACS system topology,GROMACS,file_format
+39,GROMACS trajectory,GROMACS trajectory,GROMACS,file_format
+40,HTML,HTML (HyperText Markup Language) file,,file_format
+41,HyperChem HIN,HyperChem HIN file format,HyperChem,file_format
+42,Jaguar input,Jaguar input file format,Jaguar,file_format
+43,Jaguar output,Jaguar output file format,Jaguar,file_format
+44,JPEG,JPEG (Joint Photographic Experts Group) image file,,file_format
+45,Mol2,Mol2 file format,,file_format
+46,MOPAC Cartesian,MOPAC Cartesian file format,,file_format
+47,MOPAC Internal,MOPAC Internal file format,,file_format
+48,MOPAC Output,MOPAC Output file format,,file_format
+49,NAMD configuration,NAMD configuration,NAMD,file_format
+50,NWChem input,NWChem input file format (.nw),NWChem,file_format
+51,NWChem output,NWChem output file format,NWChem,file_format
+52,NWChem restart,NWChem restart file format (.rst),NWChem,file_format
+53,NWChem topology,NWChem topology file format (.top),NWChem,file_format
+54,PDB,Protein Data Bank (PDB) file format,,file_format
+55,PNG,PNG (Portable Networks Image) image file format,,file_format
+56,PSF,Protein Structure File (PSF) format,CHARMM,file_format
+57,Ptraj script,Ptraj script,AMBER,file_format
+58,Q-Chem input,Q-Chem input file format,Q-Chem,file_format
+59,Q-Chem output,Q-Chem output file format,Q-Chem,file_format
+60,SDF,MDL Structure Data Format (SDF),,file_format
+61,Text,Text file (ASCII),,file_format
+62,TIFF,Tagged Image File Format (TIFF),,file_format
+63,TINKER XYZ,TINKER XYZ file format,TINKER,file_format
+64,TURBOMOLE Coordinate,TURBOMOLE Coordinate file format,TURBOMOLE,file_format
+65,XML,XML (eXtensible Markup Language) file,,file_format

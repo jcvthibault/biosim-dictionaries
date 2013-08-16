@@ -1,0 +1,8 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,"Andersen","Andersen thermostat",,thermostat
+2,"Berendsen","Berendsen thermostat",,thermostat
+3,"Langevin","Langevin thermostat",,thermostat
+4,"V-rescale","V-rescale thermostat",,thermostat
+5,"Nose","Nose thermostat",,thermostat
+6,"Nose-Hoover","Nose-Hoover thermostat",,thermostat
+7,"Nose-Poincare","Nose-Poincare thermostat",,thermostat

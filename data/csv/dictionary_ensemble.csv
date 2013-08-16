@@ -1,0 +1,5 @@
+ID,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,"NVE","Microcanonical ensemble (NVE): the ensemble has a fixed number of particles N, a fixed volume V, and a fixed energy E.",ensemble
+2,"NVT","Canonical ensemble (NVT): the ensemble has a fixed number of particles N, a fixed volume V, and a fixed temperature T.",ensemble
+3,"NPT","Isothermal-isobaric ensemble (NPT): the ensemble has a fixed number of particles N, a fixed volume V, and a fixed energy E.",ensemble
+4,"Generalized","Generalized ensembles: use of multiple ensembles, typically run in parallel, to overcome multipl-minima problems.",ensemble

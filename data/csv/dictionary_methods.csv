@@ -1,0 +1,123 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,HF,Hartree-Fock,,method
+2,UHF,Unrestricted Hartree-Fock,,method
+3,ROHF,Restricted open-shell Hartree-Fock,,method
+4,SCF,Self-consistent field,,method
+5,MP2,Moeller-Plesset perturbation theory (second-order),,method
+6,MP3,Moeller-Plesset perturbation theory (third-order),,method
+7,MP4,Moeller-Plesset perturbation theory (fourth-order),,method
+8,MP5,Moeller-Plesset perturbation theory (fifth-order),,method
+9,CISD,Configuration interaction singles and doubles,,method
+10,CISDT,"Configuration interaction singles, doubles, and triples",,method
+11,CISDTQ,"Configuration interaction singles, doubles, triples, and quadruples",,method
+12,CCD,Coupled-cluster doubles,,method
+13,CCSD,Coupled-cluster singles and doubles,,method
+14,LCCD,Linearized coupled-cluster doubles,,method
+15,LCCSD,Linearized coupled-cluster singles and doubles,,method
+16,CCSDT,"Coupled-cluster singles, doubles, and triples",,method
+17,CCSDTQ,"Coupled-cluster singles, doubles, triples, and quadruples",,method
+18,CCSD(T),CCSD and perturbative connected triples,,method
+19,CR-CCSD(T),Completely renormalized CCSD(T) method,,method
+20,QCISD,Quadratic configuration interaction singles & doubles,,method
+21,QCISD(T),Quadratic configuration interaction singles & doubles and perturbative connected triples,,method
+100,MC-SCF,Multi-configuration self-consistent field (MC-SCF),,method
+101,CASSCF,Complete active space SCF,,method
+102,RASSCF,Restricted active space SCF,,method
+103,MR-CI(SD),Multi-reference Configuration Interaction,,method
+104,MR-CCSD,Multi-reference Coupled-cluster method,,method
+200,PPP,Pariser-Parr-Pople,,method
+201,CNDO/2,CNDO/2,,method
+202,INDO,INDO semi-empirical method,,method
+203,NDDO,NDDO semi-empirical method,,method
+204,MINDO,MINDO semi-empirical method,,method
+205,MNDO,MNDO semi-empirical method,,method
+206,AM1,AM1 semi-empirical method,,method
+207,PM3,PM3 semi-empirical method,,method
+208,PM6,PM6 semi-empirical method,,method
+209,RM1,RM1 semi-empirical method,,method
+210,SAM1,SAM1 semi-empirical method,,method
+211,Sparkle/AM1,Sparkle/AM1 semi-empirical method,,method
+212,ZINDO,ZINDO semi-empirical method,,method
+213,SINDO,SINDO semi-empirical method,,method
+214,PM3MM,PM3MM semi-empirical method (variation of PM3),,method
+215,PDDG,PDDG semi-empirical method (variation of PM6),,method
+300,APBE,DFT with APBE exchange-correlation functional,,method
+301,B1LYP,DFT with B1LYP exchange-correlation functional,,method
+302,B1B95,DFT with B1B95 exchange-correlation functional,"A. D. Becke, 'Density-functional thermochemistry. IV. A new dynamical correlation functional and implications for exact-exchange mixing,' J. Chem. Phys., 104 (1996) 1040-46.",method
+303,B2PLYP,DFT with B2PLYP exchange-correlation functional,,method
+304,B3LYP,DFT with B3LYP exchange-correlation functional,,method
+305,B3LYP*,DFT with B3LYP* exchange-correlation functional,,method
+306,B3LYP-D,DFT with B3LYP-D exchange-correlation functional,,method
+307,B3P86,DFT with B3P86 exchange-correlation functional,,method
+308,B3PW91,DFT with B3PW91 exchange-correlation functional,,method
+309,B98,DFT with B98 exchange-correlation functional,,method
+310,B97-D,DFT with B97-D pure functional,,method
+311,B971,DFT with B971 exchange-correlation functional,"F. A. Hamprecht, A. Cohen, D. J. Tozer, and N. C. Handy, 'Development and assessment of new exchange-correlation functionals,' J. Chem. Phys., 109 (1998) 6264-71.",method
+312,B972,DFT with B972 exchange-correlation functional,"P. J. Wilson, T. J. Bradley, and D. J. Tozer, 'Hybrid exchange-correlation functional determined from thermochemical data and ab initio potentials,' J. Chem. Phys., 115 (2001) 9233-42.",method
+313,BHandH,DFT with BHandH exchange-correlation functional,,method
+314,BHandHLYP,DFT with BHandHLYP exchange-correlation functional,,method
+315,BLYP,DFT with BLYP exchange-correlation functional,,method
+316,BMK,DFT with BMK exchange-correlation functional,"A. D. Boese and J. M. L. Martin, 'Development of Density Functionals for Thermochemical Kinetics,' J. Chem. Phys., 121 (2004) 3405-16.",method
+317,BP86,DFT with BP86 exchange-correlation functional,,method
+318,CAM-B3LYP,DFT with CAM-B3LYP exchange-correlation functional,,method
+319,DCD-BLYP,DFT with DCD-BLYP exchange-correlation functional,,method
+320,DSD-PBEBP86,DFT with DSD-PBEBP86 exchange-correlation functional,,method
+321,HCTH,DFT with HCTH pure functional,"A. D. Boese and N. C. Handy, 'A new parametrization of exchange-correlation generalized gradient approximation functionals,' J. Chem. Phys., 114 (2001) 5497-503.",method
+322,HCTH93,DFT with HCTH93 pure functional,,method
+323,HCTH147,DFT with HCTH147 pure functional,,method
+324,HCTH407,DFT with HCTH407 pure functional,,method
+325,HFB,DFT with HFB exchange functional,,method
+326,HFS,DFT with HFS exchange functional,,method
+327,HSE,DFT with HSE exchange-correlation functional,,method
+328,HSE2PBE,DFT with HSE2PBE exchange-correlation functional,,method
+329,HSEh1PBE,DFT with HSEh1PBE exchange-correlation functional,"T. M. Henderson, A. F. Izmaylov, G. Scalmani, and G. E. Scuseria, 'Can short-range hybrids describe long-range-dependent properties?,' J. Chem. Phys., 131 (2009) 044108.",method
+330,HSEhPBE,DFT with HSEhPBE exchange-correlation functional,,method
+331,KT1,DFT with KT1 exchange-correlation functional,,method
+332,LB94,DFT with LB94 exchange-correlation functional,,method
+333,LC-wPBE,DFT with LC-wPBE exchange-correlation functional,,method
+334,LC-PBE,DFT with LC-PBE exchange-correlation functional,,method
+335,LDA,DFT with LDA exchange-correlation functional,,method
+336,M05,DFT with M05 exchange-correlation functional,"Y. Zhao, N. E. Schultz, and D. G. Truhlar, 'Exchange-correlation functional with broad accuracy for metallic and nonmetallic compounds, kinetics, and noncovalent interactions,' J. Chem. Phys., 123 (2005) 194101: 1-18.",method
+337,M05-2X,DFT with M05-2X exchange-correlation functional,"Y. Zhao, N. E. Schultz, and D. G. Truhlar, 'Design of density functionals by combining the method of constraint satisfaction with parametrization for thermochemistry, thermochemical kinetics, and noncovalent interactions,' J. Chem. Theory and Comput., 2 (2006) 364-82.",method
+338,M06,DFT with M06 exchange-correlation functional,"Y. Zhao and D. G. Truhlar, 'The M06 suite of density functionals for main group thermochemistry, thermochemical kinetics, noncovalent interactions, excited states, and transition elements: two new functionals and systematic testing of four M06-class functionals and 12 other functionals,' Theor. Chem. Acc., 120 (2008) 215-41.",method
+339,M06HF,DFT with M06HF exchange-correlation functional,"Y. Zhao and D. G. Truhlar, 'Density Functional for Spectroscopy: No Long-Range Self-Interaction Error, Good Performance for Rydberg and Charge-Transfer States, and Better Performance on Average than B3LYP for Ground States,' J. Phys. Chem. A, 110 (2006) 13126-30.",method
+340,M06-L,DFT with M06L pure functional,"Y. Zhao and D. G. Truhlar, 'A new local density functional for main-group thermochemistry, transition metal bonding, thermochemical kinetics, and noncovalent interactions,' J. Chem. Phys., 125 (2006) 194101.",method
+341,M06-2X,DFT with M062X exchange-correlation functional,"Y. Zhao and D. G. Truhlar, 'The M06 suite of density functionals for main group thermochemistry, thermochemical kinetics, noncovalent interactions, excited states, and transition elements: two new functionals and systematic testing of four M06-class functionals and 12 other functionals,' Theor. Chem. Acc., 120 (2008) 215-41.",method
+342,mPW1k,DFT with mPW1k exchange-correlation functional,,method
+343,mPW1LYP,DFT with mPW1LYP exchange-correlation functional,,method
+344,mPW1PBE,DFT with mPW1PBE exchange-correlation functional,,method
+345,mPW1PW91,DFT with mPW1PW91 exchange-correlation functional,"C. Adamo and V. Barone, 'Exchange functionals with improved long-range behavior and adiabatic connection methods without adjustable parameters: The mPW and mPW1PW models,' J. Chem. Phys., 108 (1998) 664-75.",method
+346,mPW3PBE,DFT with mPW3PBE exchange-correlation functional,,method
+347,O3LYP,DFT with O3LYP exchange-correlation functional,,method
+348,OLYP,DFT with OLYP exchange-correlation functional,,method
+349,optB88-vdW,DFT with optB88-vdW exchange-correlation functional,,method
+350,PBE,DFT with PBE exchange-correlation functional,"J. P. Perdew, K. Burke, and M. Ernzerhof, 'Generalized gradient approximation made simple,' Phys. Rev. Lett., 77 (1996) 3865-68.",method
+351,PBE1PBE,DFT with PBE1PBE exchange-correlation functional,,method
+352,PBEh1PBE,DFT with PBEh1PBE exchange-correlation functional,"M. Ernzerhof and J. P. Perdew, 'Generalized gradient approximation to the angle- and system-averaged exchange hole,' J. Chem. Phys., 109 (1998)",method
+353,PW91,DFT with PW91 exchange-correlation functional,"J. P. Perdew, J. A. Chevary, S. H. Vosko, K. A. Jackson, M. R. Pederson, D. J. Singh, and C. Fiolhais, 'Atoms, molecules, solids, and surfaces: Applications of the generalized gradient approximation for exchange and correlation,' Phys. Rev. B, 46 (1992) 6671-87.",method
+354,PW6B95,DFT with PW6B95 exchange-correlation functional,,method
+355,PWPB95-D3,DFT with PWPB95-D3 exchange-correlation functional,,method
+356,revPBE,DFT with revPBE exchange-correlation functional,,method
+357,revTPSS,DFT with revTPSS exchange-correlation functional,"John P. Perdew, Adrienn Ruzsinszky, Gábor I. Csonka, Lucian A. Constantin, and Jianwei Sun, Erratum: Workhorse Semilocal Density Functional for Condensed Matter Physics and Quantum Chemistry' [Phys. Rev. Lett. 103, 026403 (2009)] Phys. Rev. Lett. 106 (2011) 179902(E).",method
+358,revTPSS-D,DFT with revTPSS-D exchange-correlation functional,,method
+359,RPA,DFT with RPA exchange-correlation functional,,method
+360,RPBE,DFT with RPBE exchange-correlation functional,,method
+361,S12g,DFT with S12g exchange-correlation functional,,method
+362,S12h,DFT with S12h exchange-correlation functional,,method
+363,SAOP,DFT with SAOP exchange-correlation functional,,method
+364,SSB-D,DFT with SSB-D exchange-correlation functional,,method
+365,tau-HCTH,DFT with tau-HCTH pure functional,,method
+366,tHCTH,DFT with tHCTH pure functional,"A. D. Boese and N. C. Handy, 'New exchange-correlation density functionals: The role of the kinetic-energy density,' J. Chem. Phys., 116 (2002) 9559-69.",method
+367,tHCTHhyb,DFT with tHCTHhyb exchange-correlation functional,,method
+368,TPSSh,DFT with TPSSh exchange-correlation functional,"J. M. Tao, J. P. Perdew, V. N. Staroverov, and G. E. Scuseria, 'Climbing the density functional ladder: Nonempirical meta-generalized gradient approximation designed for molecules and solids,' Phys. Rev. Lett., 91 (2003) 146401.",method
+369,VSXC,DFT with VSXC pure functional,"T. Van Voorhis and G. E. Scuseria, 'A never form for the exchange-correlation energy functional,' J. Chem. Phys., 109 (1998) 400-10.",method
+370,wB97,DFT with wB97 exchange-correlation functional,,method
+371,wB97X,DFT with wB97X exchange-correlation functional,,method
+372,wB97XD,DFT with wB97XD exchange-correlation functional,,method
+373,X3LYP,DFT with X3LYP exchange-correlation functional,"X. Xu and W. A. Goddard III, 'The X3LYP extended density functional for accurate descriptions of nonbond interactions, spin states, and thermochemical properties,' Proc. Natl. Acad. Sci. USA, 101 (2004) 2673-77.",method
+374,XAlpha,DFT with XAlpha exchange functional,,method
+1000,MD,All-atom molecular dynamics,,method
+1001,Coarse-grain MD,Coarse-grain molecular dynamics,,method
+1002,Langevin MD,Langevin molecular dynamics (include noise and friction terms),,method
+1010,"Steepest descent","Steepest descent minimization method",,method
+1011,"Conjugate gradient","Conjugate gradient minimization method",,method

@@ -1,0 +1,12 @@
+ID,SHORT_NAME,TERM,DESCRIPTION,TYPE_ID,ATTRIBUTE_TYPE
+1,HF,Hartree-Fock,Hartree-Fock,1,method_class
+2,MP,Moeller-Plesset,Moeller-Plesset perturbation theory,1,method_class
+3,CI,Configuration interaction,Configuration Interaction,1,method_class
+4,CC,Coupled-cluster,Coupled-cluster method,1,method_class
+5,QCI,Quadratic configuration interaction,Quadratic Configuration Interaction,1,method_class
+6,DFT,Density functional theory,Density functional theory,1,method_class
+7,MR,Multi-reference,Multi-reference methods,1,method_class
+8,All-valence-electrons,All-valence-electron restricted,Semi-empirical methods restricted to all valence electrons,2,method_class
+9,Pi-electrons,Pi-electron restricted,Semi-empirical methods restricted to pi-electrons,2,method_class
+10,MD,Molecular dynamics,Molecular dynamics,3,method_class
+11,Minimization,Minimization method,Minimization methods,3,method_class

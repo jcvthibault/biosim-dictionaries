@@ -1,0 +1,5 @@
+ID,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,Classical,Classical force-field,force_field_type
+2,Polarizable,Polarizable force-field,force_field_type
+3,Reactive,Reactive force-field,force_field_type
+4,Other,Other types of force fields,force_field_type

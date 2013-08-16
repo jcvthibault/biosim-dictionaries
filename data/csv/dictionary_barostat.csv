@@ -1,0 +1,5 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,"Andersen","Andersen barostat",,barostat
+2,"Berendsen","Berendsen barostat",,barostat
+3,"Hoover","Hoover barostat",,barostat
+4,"Parinello-Rahman","Parinello-Rahman barostat",,barostat

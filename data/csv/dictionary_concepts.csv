@@ -1,0 +1,55 @@
+ID,ID_STR,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,atomic_element,Atomic element,"Atomic element, as defined in the periodic table.",concept
+2,element_family,Atomic element family,"Atomic element family (e.g. alkali, noble gas).",concept
+3,barostat,Barostat,Pressure control.,concept
+4,basis_set,Basis set,A basis set is a set of functions (called basis functions) which are combined in linear combinations (generally as part of a quantum chemical calculation) to create molecular orbitals.,concept
+5,basis_set_type,Basis set type,Type of basis set.,concept
+6,,Biomolecule,"A biomolecule is any molecule that is produced by a living organism, including large macromolecules such as proteins, polysaccharides, lipids, and nucleic acids, as well as small molecules such as primary metabolites, secondary metabolites, and natural products.",concept
+7,,Boundary conditions,Conditions applied to the borders of the box defining the system.,concept
+8,calculation,Calculation,Type of calculation performed during a computational task such as an MD run or a QM calculation.,concept
+9,,Carbohydrate,"A carbohydrate is an organic compound comprising only carbon, hydrogen, and oxygen, usually with a hydrogen:oxygen atom ratio of 2:1 (as in water). Carbohydrates are technically hydrates of carbon; structurally it is more accurate to view them as polyhydroxy aldehydes and ketones.",concept
+10,,Citation,Literature citation,concept
+11,,Collision frequency,Collision frequency used in Langevin dynamics,concept
+12,concept,Concept,Concept related to biomolecular simulations.,concept
+13,,Constraint,Constraint,concept
+14,constraint_algorithm,Constraint algorithm,Algorithm used to define a particular constraint on the system.,concept
+15,,Computing environment,Computing environment,concept
+16,,DNA,Deoxyribonucleic acid (DNA) is a molecule that encodes the genetic instructions used in the development and functioning of all known living organisms and many viruses.,concept
+17,electrostatics,Electrostatics model,Model used to represent electrostatics (Coulombic) interactions. ,concept
+18,ensemble,Ensemble type,"Type of ensemble used in a molecular dynamics run (e.g. microcanonical, isobaric-isothermal)",concept
+19,,Experiment,Experiment,concept
+20,data_generating_method,Experiment data generating method,Experiment data generating method,concept
+21,data_generating_method_type,Experiment data generating method type,Experiment data generating method type,concept
+22,,Experiment process,An experiment process is a set of experiment tasks targeting the same molecular system in sequential order (e.g. MD ensemble),concept
+23,,Experiment set,Set of experiments logically associated ,concept
+24,,Experiment task,Single computational task (as defined in a single input file).,concept
+25,,File,"A computer file is a resource for storing information, which is available to a computer program and is usually based on some kind of durable storage.",concept
+26,file_format,File format,A file format is a standard way that information is encoded for storage in a computer file.,concept
+27,,File system,"A file system is a type of data store which can be used to store, retrieve and update a set of files.",concept
+28,,Force field,A force field refers to the form and parameters of mathematical functions used to describe the potential energy of a system of particles.,concept
+29,,Force field type,Type of force field,concept
+30,force_field,Force field parameter set,Force field parameter set,concept
+31,functional_group,Functional group,Functional group in a molecule,concept
+32,,Grant,Research grant,concept
+33,,Lipid,"Lipids constitute a group of naturally occurring molecules that include fats, waxes, sterols, fat-soluble vitamins (such as vitamins A, D, E, and K), monoglycerides, diglycerides, triglycerides, phospholipids, and others.",concept
+34,method,Method,Specific method for computational chemistry.,concept
+35,method_class,Method class,Class of methods for computational chemistry.,concept
+36,method_family,Method family,Family of methods for computational chemistry.,concept
+37,,Molecular mechanics integrator,Molecular mechanics integrator,concept
+38,,Molecular system,"Molecular systems include one or more molecules, with a mixture of solvent and solute.",concept
+39,,Molecule,Group of two or more atoms held together by covalent chemical bonds.,concept
+40,,Molecule role,Role of the molecule,concept
+41,,Nucleic acid,Nucleic acids are large biological molecules essential for all known forms of life. They include DNA (deoxyribonucleic acid) and RNA (ribonucleic acid).,concept
+42,,Protein,"Protein are large biological molecules consisting of one or more chains of amino acids. Proteins perform a vast array of functions within living organisms, including catalyzing metabolic reactions, replicating DNA, responding to stimuli, and transporting molecules from one location to another.",concept
+43,residue,Residue,"A residue refers to a monomer within the polymeric chain of a polysaccharide, protein or nucleic acid.",concept
+44,,Restraint,Restraint,concept
+45,,Residue sequence,Sequence of residues ,concept
+46,,RNA,"Ribonucleic acid (RNA) is a ubiquitous family of large biological molecules that perform multiple vital roles in the coding, decoding, regulation, and expression of genes.",concept
+47,software,Software,Software package used to run a computational task.,concept
+48,,Task execution,Execution events and parameters for a task.,concept
+49,,Solvent,Solvent,concept
+50,,Solvent model type,"Type of solvent model (implicit, explicit, in vacuo)",concept
+51,,Spin multiplicity,Spin multiplicity,concept
+52,thermostat,Thermostat,Temperature control,concept
+53,,Time step,Time step,concept
+54,,Unit shape,Unit shape,concept

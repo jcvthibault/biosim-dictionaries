@@ -1,0 +1,23 @@
+ID,TERM,DESCRIPTION,TYPE_ID,CITATION,ATTRIBUTE_TYPE
+1,Accelerated MD,Accelerated Molecular Dynamics,1,"Hamelberg D, de Oliveira CA, McCammon JA, 'Sampling of slow diffusive conformational transitions with accelerated molecular dynamics'. J Chem Phys. 2007 Oct 21; 127(15):155102",data_generating_method
+2,Adaptive Force Bias,Adaptive Force Bias,1,"Hénin, J., Chipot, C., 'Overcoming free energy barriers using unconstrained molecular dynamics simulations.' The Journal of chemical physics 121 (2004): 2904.",data_generating_method
+3,Canonical adiabatic free energy sampling,Canonical adiabatic free energy sampling (CAFES),1,"VandeVondele J, Rothlisberger U. Canonical adiabatic free energy sampling (CAFES): a novel method for the exploration of free energy surface. J Phys Chem B. 2002;106:203-8.",data_generating_method
+4,Forward flux simulation,Forward flux simulation,1,"Borrero EE, Escobedo FA, 'Optimizing the sampling and staging for simulations of rare events via forward flux sampling schemes'. J Chem Phys. 2008 Jul 14; 129(2):024115.",data_generating_method
+5,Locally enhanced sampling,Locally enhanced sampling,1,"Roitberg A, Elber R. Modeling of side chains in peptides and proteins: application of the locally enhanced sampling and the simulated annealing methods to find minimum energy conformations. J Chem Phys. 1991;95:9277-87.",data_generating_method
+6,Markov chain model,Markov chain model,1,"Transition networks for modeling the kinetics of conformational change in macromolecules. Noé F, Fischer S, Curr Opin Struct Biol. 2008 Apr; 18(2):154-62.",data_generating_method
+7,Max-flux approach,Max-flux approach,1,"Huo S, Straub JE. The MaxFlux algorithm for calculating variationally optimized reaction paths for conformational transitions in many body systems at finite temperature. J Chem Phys. 1997;107:5000ﾖ6. doi: 10.1063/1.474863.",data_generating_method
+8,Metadynamics,Metadynamics,1,"Parrinello M. Eppur si muove. In: Zewail AH, editor. Physical Biology: 4D Visualization of Complexity. London: Imperial College Press; 2008. pp. 247-66.",data_generating_method
+9,Milestoning,Milestoning,1,"Elber R, 'A milestoning study of the kinetics of an allosteric transition: atomically detailed simulations of deoxy Scapharca hemoglobin'. Biophys J. 2007 May 1; 92(9):L85-7.",data_generating_method
+10,Multi-state Bennett Acceptance Ratio,Multi-state Bennett Acceptance Ratio (MBAR),1,,data_generating_method
+11,Neural networks,Neural networks,1,,data_generating_method
+12,Nudged elastic band,Nudged elastic band,1,"Henkelman G, Jónsson H. Improved tangent estimate in the nudged elastic band method for finding minimum energy paths and saddle points. J Chem Phys. 2000;113:9978-85.",data_generating_method
+13,Reference potential spatial warping,Reference potential spatial warping algorithm,1,"Minary P, Tuckerman ME, Martyna GJ. Dynamical spatial warping: a novel method for the conformational sampling of biophysical structure. SIAM J Sci Comput. 2008;30:2055-83",data_generating_method
+14,Replica-Exchange,Replica-Exchange molecular dynamics,1,"Sugita Y, Okamoto Y. Replica-exchange molecular dynamics methods for protein folding. Chem Phys Lett. 1999;314:141ﾖ51. doi: 10.1016/S0009-2614(99)01123-9",data_generating_method
+15,Steered dynamics,Steered dynamics,1,"Isralewitz, Barry, Mu Gao, and Klaus Schulten. 'Steered molecular dynamics and mechanical functions of proteins.' Current opinion in structural biology 11.2 (2001): 224-230.",data_generating_method
+16,String method,String method,1,"Solvent coarse-graining and the string method applied to the hydrophobic collapse of a hydrated chain. Miller TF 3rd, Vanden-Eijnden E, Chandler D, Proc Natl Acad Sci U S A. 2007 Sep 11; 104(37):14559-64.",data_generating_method
+17,Swarm-of-trajectories,Swarm-of-trajectories,1,,data_generating_method
+18,Targeted MD,Targeted molecular dynamics,1,"Kong Y, Shen Y, Warth TE, Ma J, 'Conformational pathways in the gating of Escherichia coli mechanosensitive channel', Proc Natl Acad Sci U S A. 2002 Apr 30; 99(9):5999-6004.",data_generating_method
+19,Transition path sampling,Transition path sampling,1,"Dellago C, Bolhuis PG. Transition path sampling simulations of biological systems. Top Curr Chem. 2007;268:291-317.",data_generating_method
+20,Transition state ensembles,Transition state ensembles,1,"Paci E, Lindorff-Larsen K, Dobson CM, Karplus M, Vendruscolo M, 'Transition state contact orders correlate with protein folding rates'. J Mol Biol. 2005 Sep 23; 352(3):495-500.",data_generating_method
+21,Transition interface sampling,Transition interface sampling,1,,data_generating_method
+22,Umbrella sampling,Umbrella sampling,1,,data_generating_method

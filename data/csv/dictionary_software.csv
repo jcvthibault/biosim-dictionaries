@@ -1,0 +1,29 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,Abalone,Software package for biomolecular simulations and protein folding,http://www.biomolecular-modeling.com/Abalone/,software
+2,ADF,ADF (Amsterdam Density Functional) software package,http://www.scm.com/,software
+3,AMBER,AMBER (Assisted Model Building and Energy Refinement) MD software package,"Case, David A., et al. 'The Amber biomolecular simulation programs.' Journal of computational chemistry 26.16 (2005): 1668-1688.",software
+4,CHARMM,CHARMM (Chemistry at HARvard Molecular Mechanics) MD software package,"Brooks, Bernard R., et al. 'CHARMM: the biomolecular simulation program.' Journal of computational chemistry 30.10 (2009): 1545-1614.",software
+5,CP2K,CP2K software package,http://www.cp2k.org/,software
+6,CPMD,CPMD (Car-Parinello Molecular Dynamics) software package,"Andreoni, Wanda, and Alessandro Curioni. 'New advances in chemistry and materials science with CPMD and parallel computing.' Parallel Computing 26.7 (2000): 819-842.",software
+7,Desmond,"Desmond MD software package developed by D.E. Shaw Research and marketed by Schrodinger, Inc.","Kevin J. Bowers, Edmond Chow, Huafeng Xu, Ron O. Dror, Michael P. Eastwood, Brent A. Gregersen, John L. Klepeis, Istvan Kolossvary, Mark A. Moraes, Federico D. Sacerdoti, John K. Salmon, Yibing Shan, and David E. Shaw, 'Scalable Algorithms for Molecular Dynamics Simulations on Commodity Clusters,' Proceedings of the ACM/IEEE Conference on Supercomputing (SC06), Tampa, Florida, 2006, November 11-17",software
+8,GAMESS-UK,GAMESS (General Atomic and Molecular Electronic Structure System) QM software package (UK variant),"Guest, Martyn F.; Bush, Ian J.; Van Dam, Huub J. J.; Sherwood, Paul; Thomas, Jens M. H.; Van Lenthe, Joop H.; Havenith, Remco W. A.; Kendrick, John (2005). 'The GAMESS-UK structure package: algorithms, developments and applications'. Molecular Physics 103 (6-8): 719-747.",software
+9,GAMESS-US,GAMESS (General Atomic and Molecular Electronic Structure System) QM software package (US variant),http://www.msg.chem.iastate.edu/gamess/,software
+10,Gaussian,"Gaussian QM software package. Marketed by Gaussian, Inc.",http://www.gaussian.com/,software
+11,GROMACS,GROMACS MD software package,"Hess, Berk, et al. 'GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable molecular simulation.' Journal of chemical theory and computation 4.3 (2008): 435-447.",software
+12,GROMOS,GROMOS (GROningen MOlecular Simulation package) MD software package,"Christen, Markus, et al. 'The GROMOS software for biomolecular simulation: GROMOS05.' Journal of computational chemistry 26.16 (2005): 1719-1751.",software
+13,HyperChem,"HyperChem software package marketed by Hypercube, Inc.",http://www.hyper.com/,software
+14,Jaguar,"Jaguar QM software package. Marketed by Schrodinger, Inc.",http://www.schrodinger.com/productpage/14/7/,software
+15,LAMMPS,LAMMPS (Large-scale Atomic/Molecular Massively Parallel Simulator) MD software package,"Plimpton, S., P. Crozier, and A. Thompson. 'LAMMPS-large-scale atomic/molecular massively parallel simulator.' Sandia National Laboratories (2007).",software
+16,MOPAC,MOPAC (Molecular Orbital PACkage) semiempirical quantum chemistry software package,http://openmopac.net,software
+17,NAMD,NAMD (Not Another Molecular Dynamics program) software package,"James C. Phillips, Rosemary Braun, Wei Wang, James Gumbart, Emad Tajkhorshid, Elizabeth Villa, Christophe Chipot, Robert D. Skeel, Laxmikant Kale, and Klaus Schulten, 'Scalable molecular dynamics with NAMD', Journal of Computational Chemistry, 26:1781-1802, 2005.",software
+18,NWChem,NWChem QM software package,"Valiev, M.; Bylaska, E.J.; Govind, N.; Kowalski, K.; Straatsma, T.P.; Van Dam, H.J.J.; Wang, D.; Nieplocha, J. et al. (2010). 'NWChem: A comprehensive and scalable open-source solution for large scale molecular simulations'. Computer Physics Communications 181 (9): 1477-1489.",software
+19,Firefly,Firefly (previously known as PC GAMESS) QM software package,http://classic.chem.msu.su/gran/gamess/,software
+20,Q-Chem,Q-Chem QM software package,http://www.q-chem.com/,software
+21,Quantum ESPRESSO,"Quantum ESPRESSO (opEn-Source Package for Research in Electronic Structure, Simulation, and Optimization) QM software package",http://www.quantum-espresso.org/,software
+22,SIESTA,SIESTA (Spanish Initiative for Electronic Simulations with Thousand of Atoms) software package,http://www.nanotec.es/products/siesta.php,software
+23,Spartan,"Software package, marketed by Wavefunction, Inc.",http://www.wavefun.com/products/spartan.html,software
+24,TINKER,TINKER software package,http://dasher.wustl.edu/ffe/,software
+25,Tremolo-X,Tremolo-X software package,http://www.tremolo-x.com/,software
+26,TURBOMOLE,TURBOMOLE software package,http://www.turbomole.com/,software
+27,VASP,VASP (Vienna Ab-initio Simulation Package) software package,http://www.vasp.at/,software
+28,X-PLOR,X-PLOR software package,http://nmr.cit.nih.gov/xplor-nih/,software

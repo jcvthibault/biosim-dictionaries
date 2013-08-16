@@ -1,0 +1,5 @@
+ID,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,Minimal,Minimal basis sets: use a fixed number of Gaussian primitive functions to represent core and valence orbitals.,basis_set_type
+2,Split-valence,Split-valence basis sets: represent valence orbitals by more than one basis function. They include 'Pople' and correlation-consistent basis sets.,basis_set_type
+3,Plane-wave,Plane-wave basis sets: use a finite number of plane-wave functions,basis_set_type
+4,Real-space,Real-space basis sets: functions are centered on a uniform mesh in real space.,basis_set_type

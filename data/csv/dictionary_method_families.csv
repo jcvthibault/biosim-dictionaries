@@ -1,0 +1,4 @@
+ID,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,Ab initio,Ab initio method,method_family
+2,Semi-empirical,Semi-empirical method,method_family
+3,Empirical,Empirical method,method_family

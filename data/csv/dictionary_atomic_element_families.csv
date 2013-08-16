@@ -1,0 +1,9 @@
+ID,TERM,DESCRIPTION,ATTRIBUTE_TYPE
+1,Alkali metal,"Alkali metals are shiny, soft, highly reactive metals at standard temperature and pressure and readily lose their outermost electron to form cations with charge +1.",element_family
+2,Alkaline Earth metal,"Alkaline Earth metals are shiny, silvery-white, somewhat reactive metals at standard temperature and pressure and readily lose their two outermost electrons to form cations with charge 2+ and an oxidation state, or oxidation number of +2.",element_family
+3,Transition metal,"Transition metal: element whose atom has an incomplete d sub-shell, or which can give rise to cations with an incomplete d sub-shel.",element_family
+4,Halogen,Halogens: form acids when bonded to hydrogen. Most halogens are typically produced from minerals of salts.,element_family
+5,Noble gas,"Noble gases: under standard conditions, they are all odorless, colorless, monatomic gases with very low chemical reactivity.",element_family
+6,Rare Earth element,"Rare Earth elements are a set of seventeen chemical elements in the periodic table, specifically the fifteen lanthanides plus scandium and yttrium.",element_family
+7,Other metal,"Other metals: do not exhibit variable oxidation states, and their valence electrons are only present in their outer shell. All of these elements are solid, have a relatively high density, and are opaque.",element_family
+8,Other non metal,Non metals other than halogens and noble gases,element_family

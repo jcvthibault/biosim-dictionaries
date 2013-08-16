@@ -1,0 +1,5 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,"Cutoff","Plain cutoff used to truncate any Coulombic interactions after a finite distance",,electrostatics
+2,"PME","Particle Mesh Ewald (PME)",,electrostatics
+3,"P3M","Particle-Particle Particle Mesh (P3M) is a Fourier-based Ewald summation method to calculate potentials in N-body simulations",,electrostatics
+4,"Reaction field","The reaction field method for electrostatics assumes a uniform dielectric constant beyond a short-range cutoff value",,electrostatics

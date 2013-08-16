@@ -1,0 +1,57 @@
+ID,TERM,DESCRIPTION,TYPE_ID,ATTRIBUTE_TYPE
+1,Anharmonic vibrational corrections,Anharmonic vibrational corrections,1,calculation
+2,Antiferromagnetic coupling,Antiferromagnetic coupling,1,calculation
+3,Atomic charges,Atomic charges,3,calculation
+4,Conical intersection point,Locate conical intersection point on the intersection seam of two potential energy surfaces.,1,calculation
+5,Delta G of solvation,Delta G of solvation,4,calculation
+6,Dipole moment,Dipole moment,1,calculation
+7,Dynamics,Dynamics trajectory calculation.,1,calculation
+8,Direct Reaction Coordinate,Follow dynamic reaction coordinate.,1,calculation
+9,Electron affinities,Electron affinities,1,calculation
+10,Electron density,Electron density,3,calculation
+11,Electronic circular dichroism,Electronic circular dichroism,3,calculation
+12,Electrostatic potential,Electrostatic potential,3,calculation
+13,Electrostatic potential-derived charges,Electrostatic potential-derived charges,3,calculation
+14,Electronic transition band shape,Electronic transition band shape,3,calculation
+15,Energy decomposition analysis,Perform energy decomposition analysis.,1,calculation
+16,FMO geometry optimization,Fragment Molecular Orbital (FMO) geometry optimization,1,calculation
+17,Free state FMO calculation,Performs the free state Fragment Molecular Orbital (FMO) calculation,1,calculation
+18,Frequency,Frequency and thermochemical analysis.,1,calculation
+19,Gamma,"Evaluate up to 3rd nuclear derivatives, by finite differencing of Hessians.",1,calculation
+20,Geometry optimization,Minimize the energy by varying the molecular structure.,1,calculation
+21,Gradient,Evaluate the derivative of the energy with respect to nuclear coordinates.,1,calculation
+22,Heat of formation,Evaluate heat of formation,1,calculation
+23,Hessian,Compute gradient and second derivatives.,1,calculation
+24,High accuracy energies,High accuracy energies,1,calculation
+25,Hyperfine coupling constants,Hyperfine coupling constants (anisotropic),1,calculation
+26,Hyperfine spectra tensors,Hyperfine spectra tensors (including g tensors),1,calculation
+27,Ionization potentials,Ionization potentials,1,calculation
+28,Infrared spectra,Infrared spectra,1,calculation
+29,Intrisic Reaction Coordinate,Reaction path following.,1,calculation
+30,Intrisic Reaction Coordinate maxixmum,Find the maximum energy along a specific reaction path.,1,calculation
+31,Pre-resonance Raman spectra,Pre-resonance Raman spectra,1,calculation
+32,Polarizabilities/hyperpolarizabilities,Polarizabilities and hyperpolarizabilities.,1,calculation
+33,Minimum crossing,Locate minimum energy crossing point on the intersection seam of two potential energy surfaces,1,calculation
+34,Molecular orbitals,Molecular orbitals,1,calculation
+35,Multipole moments,Multipole moments,1,calculation
+36,NMR shielding and chemical shifts,NMR shielding and chemical shifts,1,calculation
+37,NMR spin-spin coupling constants,NMR spin-spin coupling constants,1,calculation
+38,Nuclei forces,Compute forces on the nuclei.,1,calculation
+39,Optical rotations,Optical rotations,1,calculation
+40,Radiative transition moment,Compute radiative transition moment,1,calculation
+41,Raman spectra,Raman spectra,1,calculation
+42,Raman optical activity,Raman optical activity,1,calculation
+43,Saddle,Conduct a search for a transition state (or saddle point).,1,calculation
+44,Scan,Potential energy surface scan.,1,calculation
+45,Single point energy,Evaluate the single point energy.,1,calculation
+46,Spin-orbit coupling,Compute spin-orbit coupling.,1,calculation
+47,Thermochemical analysis,Thermochemical analysis,1,calculation
+48,Thermodynamics,Perform multi-configuration thermo-dynamic integration using classical MD,2,calculation
+49,Time-dependent polarizabilities,Analytic computation of time dependent polarizabilities.,3,calculation
+50,Trace gradient extremal,Trace gradient extremal,1,calculation
+51,UV/Visible spectra,UV/Visible spectra,1,calculation
+52,Vibration-rotation coupling,Vibration-rotation coupling,1,calculation
+53,Vibrational circular dichroism,Vibrational circular dichroism,1,calculation
+54,Volume,Compute molecular volume,4,calculation
+55,Wave function stability,Test wavefunction stability,3,calculation
+56,Wave function property,Calculate the properties for the wave function.,3,calculation
