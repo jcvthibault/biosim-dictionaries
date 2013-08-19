@@ -42,9 +42,9 @@ import edu.utah.bmi.ibiomes.dictionary.model.DBFileFormatDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBForceFieldDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBForceFieldTypeDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBFunctionalGroupDefinition;
-import edu.utah.bmi.ibiomes.dictionary.model.DBMethodClassDefinition;
-import edu.utah.bmi.ibiomes.dictionary.model.DBMethodDefinition;
-import edu.utah.bmi.ibiomes.dictionary.model.DBMethodFamilyDefinition;
+import edu.utah.bmi.ibiomes.dictionary.model.DBComputationalMethodClassDefinition;
+import edu.utah.bmi.ibiomes.dictionary.model.DBComputationalMethodDefinition;
+import edu.utah.bmi.ibiomes.dictionary.model.DBComputationalMethodFamilyDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBResidueDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBSoftwareDefinition;
 import edu.utah.bmi.ibiomes.dictionary.model.DBThermostatDefinition;
@@ -106,11 +106,11 @@ public class HBMappingTest {
 	        //calculations
 	        session = sessionFactory.openSession();
 	        session.beginTransaction();
-			List<DBMethodDefinition> methods = session.createQuery("from DBMethodDefinition").list();
-			for (DBMethodDefinition method : methods){
-				Set<DBMethodClassDefinition> types = method.getMethodClasses();
-				for (DBMethodClassDefinition type : types){
-					DBMethodFamilyDefinition family = type.getFamily();
+			List<DBComputationalMethodDefinition> methods = session.createQuery("from DBMethodDefinition").list();
+			for (DBComputationalMethodDefinition method : methods){
+				Set<DBComputationalMethodClassDefinition> types = method.getMethodClasses();
+				for (DBComputationalMethodClassDefinition type : types){
+					DBComputationalMethodFamilyDefinition family = type.getFamily();
 				}
 		    }
 			session.getTransaction().commit();
