@@ -20,7 +20,7 @@
  DIRECTORY STRUCTURE 
 ====================================================
 
-This folder (we will call it $BIOSIM_DICT) contains the following sub-directories:
+This folder (we will call it $BIOSIM_REPO) contains the following sub-directories:
 
 - [./config/]
       Configuration files to edit before API use. These files specify the SQL 
@@ -32,30 +32,34 @@ This folder (we will call it $BIOSIM_DICT) contains the following sub-directorie
 - [./lucene/scripts/] 
       Scripts to build and test the Lucene indexes.  
 - [./parent/]
-      Maven parent project for lucene/ and sql/ 
+      Maven parent project for lucene/, sql/, and web/ 
 - [./sql/]
-      Hibernate mappings for the SQL-based dictionaries
+      Hibernate mappings (Java/SQL) for the database
 - [./sql/scripts/] 
       Scripts to create and populate the SQL tables
+- [./uml/] 
+      UML logical (Java) and physical (MySQL) models
 - [./web/]
       Web interface for the Lucene-based dictionaries
 
 ====================================================
- I. CREATING THE DICTIONARIES WITH MYSQL
+ I. CREATING THE DATABASE
 ====================================================
  Requirements:
  - MySQL server 5+
  
  Installation steps:
  - copy the CSV files to the /tmp directory so that MySQL can read files: 
-   'cp -f $BIOSIM_DICT/data/csv/* /tmp/'
- - cd to $BIOSIM_DICT/sql/scripts/
+   'cp -f $BIOSIM_REPO/data/csv/* /tmp/'
+ - cd to $BIOSIM_REPO/sql/scripts/
  - To create the tables and populate the data, in MySQL:
-   source 'biosim_dict_all.sql'
-   For example type something like: 'mysql -u mysql -D MY_DATABASE -p < biosim_dict_all.sql'
+   source db_all.sql
+   For example type something like: 'mysql -u mysql -D MY_DATABASE -p < db_all.sql'
+ - If you only want to create the dictionary tables:
+   source biosim_dict_all.sql
 
- To compile the Java API:
- - cd $BIOSIM_DICT/sql
+ To compile the Java API (Hibernate mappings):
+ - cd $BIOSIM_REPO/sql
  - mvn install
 
 ====================================================
@@ -66,18 +70,18 @@ This folder (we will call it $BIOSIM_DICT) contains the following sub-directorie
  - Maven 2
  
  To compile the Java API:
- - cd $BIOSIM_DICT/lucene
+ - cd $BIOSIM_REPO/lucene
  - mvn package
- A JAR file containing all the compiled classes should be created in $BIOSIM_DICT/lucene/target/biosim-dictionary-lucene-api.jar
+ A JAR file containing all the compiled classes should be created in $BIOSIM_REPO/lucene/target/biosim-dictionary-lucene-api.jar
  
  To build the Lucene indexes:
- - cd $BIOSIM_DICT/lucene
+ - cd $BIOSIM_REPO/lucene
  - ./scripts/lucene-build-dictionaries.sh <csv-dir> <output-dir>
           <csv-dir> path to the folder containg all the CSV files representing the dictionary data
           <output-dir>: path to the directory where all the Lucene indexes will be created
  
  To test the dictionary lookups:
- - cd $BIOSIM_DICT/lucene
+ - cd $BIOSIM_REPO/lucene
  - ./scripts/lucene-lookup.sh [options]
  Options: lookup -i <index-path> -t <term> [-f <lookup-field>] [-n <max-hits>]
           list   -i <index-path>
@@ -90,7 +94,7 @@ This folder (we will call it $BIOSIM_DICT) contains the following sub-directorie
 ====================================================
 Make sure you read the previous sections first.
 To compile 
- - cd $BIOSIM_DICT/parent
+ - cd $BIOSIM_REPO/parent
  - mvn install 
 
 

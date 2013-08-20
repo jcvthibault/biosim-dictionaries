@@ -18,7 +18,7 @@
 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
     	<property name="locations">
 		    <list>
-		        <value>file:${IBIOMES_HOME}/config/biosim-dictionaries-db.properties</value>
+		        <value>file:${IBIOMES_HOME}/config/biosim-db.properties</value>
 		    </list>
 		</property>
     </bean>
@@ -38,7 +38,7 @@
     		
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="packagesToScan" value="edu.utah.bmi.ibiomes.dictionary.model" />
+		<property name="packagesToScan" value="edu.utah.bmi.ibiomes.db" />
 		
 		<property name="hibernateProperties">
 			<props>

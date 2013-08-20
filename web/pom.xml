@@ -5,7 +5,7 @@
   <artifactId>biosim-dictionary-web</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Web application for biomolecular simulation dictionaries</name>
+  <name>Web interface for biomolecular simulation dictionaries</name>
   <url>http://maven.apache.org</url>
   
   <properties>

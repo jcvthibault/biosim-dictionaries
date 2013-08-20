@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<groupId>edu.utah.bmi.ibiomes</groupId>
 	<modelVersion>4.0.0</modelVersion>
-	<artifactId>biosim-dictionary-sql</artifactId>
+	<artifactId>biosim-db</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Hibernate mappings (Java/SQL) for biomolecular simulation dictionaries </name>
+	<name>Hibernate mappings (Java/SQL) for biomolecular simulation DB </name>
 	<url>http://maven.apache.org</url>
 	
 	<properties>
