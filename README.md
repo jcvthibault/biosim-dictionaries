@@ -17,14 +17,12 @@
 -->
 
 Biomolecular simulation repository
-===========
 
 iBIOMES - Integrated Biomolecular Simulations
 
 Copyright (C) 2013  Julien Thibault, University of Utah
 
 ## Directory structure 
-===========
 This folder (we will call it $BIOSIM_REPO) contains the following sub-directories:
  - [config] Configuration files to edit before API use. These files specify the SQL connection parameters and the Lucene-related parameters) 
  - [data/csv] CSV files containing the dictionary data
@@ -37,15 +35,12 @@ This folder (we will call it $BIOSIM_REPO) contains the following sub-directorie
  - [web] Web interface for the Lucene-based dictionaries
 
 ## Creating the database
-===========
 ### Prerequisites
-===========
  - MySQL server 5+
  - Java 1.5+
  - Apache Maven 2
 
 ### Installation
-===========
 Copy the CSV files to the /tmp directory so that MySQL can read files:
 
 	cp -f $BIOSIM_REPO/data/csv/* /tmp/
@@ -70,14 +65,11 @@ To compile the Java API (Hibernate mappings):
 	mvn install
 
 ## Creating the Lucene-based dictionaries
-===========
 ### Prerequisites
-===========
  - Java 1.5+
  - Apache Maven 2
 
 ### Installation
-===========
 To compile the Java API:
 
 	cd $BIOSIM_REPO/lucene
@@ -105,7 +97,6 @@ To test the dictionary lookups:
  list:   list all the entries in the Lucene index at <index-path>.
 
 ## Building everything
-===========
 Make sure you read the previous sections first.
 To compile: 
 
