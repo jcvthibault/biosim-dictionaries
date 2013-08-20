@@ -25,7 +25,6 @@ Copyright (C) 2013  Julien Thibault, University of Utah
 
 ## Directory structure 
 ===========
-
 This folder (we will call it $BIOSIM_REPO) contains the following sub-directories:
  - [config] Configuration files to edit before API use. These files specify the SQL connection parameters and the Lucene-related parameters) 
  - [data/csv] CSV files containing the dictionary data
@@ -39,17 +38,14 @@ This folder (we will call it $BIOSIM_REPO) contains the following sub-directorie
 
 ## Creating the database
 ===========
-
 ### Prerequisites
 ===========
-
  - MySQL server 5+
  - Java 1.5+
  - Apache Maven 2
 
 ### Installation
 ===========
-
 Copy the CSV files to the /tmp directory so that MySQL can read files:
 
 	cp -f $BIOSIM_REPO/data/csv/* /tmp/
@@ -75,16 +71,13 @@ To compile the Java API (Hibernate mappings):
 
 ## Creating the Lucene-based dictionaries
 ===========
-
 ### Prerequisites
 ===========
-
  - Java 1.5+
  - Apache Maven 2
 
 ### Installation
 ===========
-
 To compile the Java API:
 
 	cd $BIOSIM_REPO/lucene
@@ -96,6 +89,7 @@ To build the Lucene indexes:
 
 	cd $BIOSIM_REPO/lucene
 	./scripts/lucene-build-dictionaries.sh <csv-dir> <output-dir>
+
 		<csv-dir> path to the folder containg all the CSV files representing the dictionary data
 		<output-dir>: path to the directory where all the Lucene indexes will be created
 
@@ -110,10 +104,8 @@ To test the dictionary lookups:
  lookup: lookup a term <term> in the Lucene index at <index-path> in a particular field <lookup-field>.
  list:   list all the entries in the Lucene index at <index-path>.
 
-
 ## Building everything
 ===========
-
 Make sure you read the previous sections first.
 To compile: 
 
