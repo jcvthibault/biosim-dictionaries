@@ -114,6 +114,9 @@ public class CSVFile
 		    //read first line (CSV header)
 		    String headerLine = br.readLine();
 		    headers = headerLine.split(delimiter);
+		    for (int h=0;h<headers.length;h++){
+		    	headers[h] = headers[h].replaceAll("\"", "");
+		    }
 		    
 		    //read dataset
 			while (( line = br.readLine()) != null)

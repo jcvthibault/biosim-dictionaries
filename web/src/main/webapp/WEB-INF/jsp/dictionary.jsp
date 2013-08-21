@@ -3,7 +3,6 @@
 <%@page import="edu.utah.bmi.ibiomes.dictionary.web.HTMLUtils"%>
 <%@page import="edu.utah.bmi.ibiomes.dictionary.core.DictionaryEntryValue"%>
 <%@page import="edu.utah.bmi.ibiomes.dictionary.core.DictionaryEntry"%>
-<%@page import="edu.utah.bmi.ibiomes.dictionary.sql.SqlDictionary"%>
 <%@page import="org.springframework.web.context.WebApplicationContext"%>
 <%@page import="java.util.List"%>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">

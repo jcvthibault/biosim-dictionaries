@@ -1,4 +1,4 @@
-ID,ONE_LETTER,THREE_LETTER,TERM,DESCRIPTION,TYPE,FORMULA,ATTRIBUTE_TYPE
+"ID","ONE_LETTER","THREE_LETTER","TERM","DESCRIPTION","TYPE","FORMULA","ATTRIBUTE_TYPE"
 1,"A","ALA","alanine","alanine","Amino acid","CH3-CH(NH2)-COOH","residue"
 2,"R","ARG","arginine","arginine","Amino acid","HN=C(NH2)-NH-(CH2)3-CH(NH2)-COOH","residue"
 3,"N","ASN","asparagine","asparagine","Amino acid","H2N-CO-CH2-CH(NH2)-COOH","residue"

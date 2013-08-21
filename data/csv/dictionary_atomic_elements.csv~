@@ -1,4 +1,4 @@
-ID,SYMBOL,TERM,DESCRIPTION,MASS,TYPE_ID,ATTRIBUTE_TYPE
+"ID","SYMBOL","TERM","DESCRIPTION","MASS","TYPE_ID","ATTRIBUTE_TYPE"
 1,"H","Hydrogen","Hydrogen",1.00794,8,"atomic_element"
 2,"He","Helium","Helium",4.002602,5,"atomic_element"
 3,"Li","Lithium","Lithium",6.941,1,"atomic_element"
