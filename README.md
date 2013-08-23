@@ -23,7 +23,7 @@ iBIOMES - Integrated Biomolecular Simulations
 Copyright (C) 2013  Julien Thibault, University of Utah
 
 This project provides logical and data models to prototype a repository for 
-biomolecular simulations. Scripts are available to buiild a MySQL DB, along with
+biomolecular simulations. Scripts are available to build a MySQL DB, along with
 the Java API to interact with the database (through Hibernate).
 
 A set of dictionaries (including basis sets, force-fields, and computational 
