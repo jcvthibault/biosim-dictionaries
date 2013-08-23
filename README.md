@@ -22,6 +22,21 @@ iBIOMES - Integrated Biomolecular Simulations
 
 Copyright (C) 2013  Julien Thibault, University of Utah
 
+This project provides logical and data models to prototype a repository for 
+biomolecular simulations. Scripts are available to buiild a MySQL DB, along with
+the Java API to interact with the database (through Hibernate).
+
+A set of dictionaries (including basis sets, force-fields, and computational 
+methods) was also created to define terms that are commonly used in the field of 
+biomolecular simulation, whether it it is in the literature or in the input/output
+ files used to run the simulations.
+All the dictionaries are stored as simple CSV (Comma-Separated Value) files. 
+A Java API was created to wrap these dictionaries into Apache Lucene indexes. 
+The API can be used within a program to query elements based on their name or 
+description. A set of SQL scripts is also provided to use these dictionaries 
+as database tables. The scripts create a database schema and populate the new 
+tables with the CSV data.
+
 ## Directory structure 
 This folder (we will call it $BIOSIM_REPO) contains the following sub-directories:
  - [config] Configuration files to edit before API use. These files specify the SQL connection parameters and the Lucene-related parameters) 
