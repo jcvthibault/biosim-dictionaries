@@ -181,12 +181,12 @@ public class TestHibernateExperimentManager {
     		}
     		if (params.getThermostat()!=null){
     			DBThermostat thermostat = params.getThermostat();
-    			logger.info("           Thermostat name: " + thermostat.getName());
+    			logger.info("           Thermostat name: " + thermostat.getAlgorithm());
     			logger.info("           Thermostat cst : " + thermostat.getTimeConstant());
     		}
     		if (params.getBarostat()!=null){
     			DBBarostat barostat = params.getBarostat();
-    			logger.info("           Barostat name: " + barostat.getName());
+    			logger.info("           Barostat name: " + barostat.getAlgorithm());
     			logger.info("           Barostat cst : " + barostat.getTimeConstant());
     		}
     		if (params.getRestraints()!=null){

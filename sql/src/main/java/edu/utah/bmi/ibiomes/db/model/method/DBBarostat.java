@@ -35,7 +35,7 @@ import javax.persistence.Table;
 public class DBBarostat {
 
 	private Long id;
-	private String name;
+	private String algorithm;
 	private Double timeConstant;
 
 	public DBBarostat(){
@@ -45,9 +45,9 @@ public class DBBarostat {
 	public Long getId() {return id;}
 	public void setId(Long id) {this.id = id;}
 
-	@Column(name = "name")
-	public String getName() {return name;}
-	public void setName(String name) {this.name = name;}
+	@Column(name = "algorithm")
+	public String getAlgorithm() {return algorithm;}
+	public void setAlgorithm(String algorithm) {this.algorithm = algorithm;}
 
 	@Column(name = "time_constant")
 	public Double getTimeConstant() {return timeConstant;}
