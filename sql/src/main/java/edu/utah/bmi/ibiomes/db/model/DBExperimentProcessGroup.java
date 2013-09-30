@@ -37,21 +37,23 @@ import org.hibernate.annotations.NotFoundAction;
 
 import edu.utah.bmi.ibiomes.db.model.structure.DBMolecularSystem;
 
+
 /**
- * Experiment process
+ * Experiment process group
  * @author Julien Thibault, University of Utah
  *
  */
 @Entity
-@Table(name="EXPERIMENT_PROCESS")
-public class DBExperimentProcess {
+@Table(name="EXPERIMENT_PROCESS_GROUP")
+public class DBExperimentProcessGroup {
 
 	private Long id;
 	private String name;
 	private String description;
-	private List<DBExperimentTask> tasks;
+	private DBMolecularSystem molecularSystem;
+	private List<DBExperimentProcess> processes;
 
-	public DBExperimentProcess(){
+	public DBExperimentProcessGroup(){
 	}
 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY) 
@@ -66,9 +68,15 @@ public class DBExperimentProcess {
 	public String getDescription() {return description;}
 	public void setDescription(String description) {this.description = description;}
 
+	@OneToOne
+	@JoinColumn(name="system_id")
+	@NotFound(action = NotFoundAction.IGNORE)
+	public DBMolecularSystem getMolecularSystem() {return molecularSystem;}
+	public void setMolecularSystem(DBMolecularSystem molecularSystem) {this.molecularSystem = molecularSystem;}
+
 	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
-	@JoinColumn(name="process_id")
-	public List<DBExperimentTask> getTasks() {return tasks;}
-	public void setTasks(List<DBExperimentTask> tasks) {this.tasks = tasks;}
+	@JoinColumn(name="process_group_id")
+	public List<DBExperimentProcess> getProcesses() {return processes;}
+	public void setProcesses(List<DBExperimentProcess> processes) {this.processes = processes;}
 
 }

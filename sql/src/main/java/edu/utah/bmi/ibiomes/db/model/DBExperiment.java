@@ -48,7 +48,7 @@ public class DBExperiment {
 	private String description;
 	private String owner;
 	private Long timestamp;
-	private List<DBExperimentProcess> processes;
+	private List<DBExperimentProcessGroup> processGroups;
 	private Set<DBExperimentSet> referencingSets;
 	private Set<DBFileSystem> fileCollections;
 	private Set<DBCitation> citations;
@@ -78,8 +78,8 @@ public class DBExperiment {
 
 	@OneToMany(cascade = CascadeType.ALL, fetch=FetchType.LAZY)
 	@JoinColumn(name="experiment_id", insertable=true)
-	public List<DBExperimentProcess> getProcesses() {return processes;}
-	public void setProcesses(List<DBExperimentProcess> processes) {	this.processes = processes;}
+	public List<DBExperimentProcessGroup> getProcessGroups() {return processGroups;}
+	public void setProcessGroups(List<DBExperimentProcessGroup> processGroups) {this.processGroups = processGroups;}
 
 	@ManyToMany
     @JoinTable(

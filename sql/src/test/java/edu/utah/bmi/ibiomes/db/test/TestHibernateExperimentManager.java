@@ -33,6 +33,7 @@ import edu.utah.bmi.ibiomes.db.dictionary.model.DBComputationalMethodClassDefini
 import edu.utah.bmi.ibiomes.db.dictionary.model.DBResidueDefinition;
 import edu.utah.bmi.ibiomes.db.model.DBExperiment;
 import edu.utah.bmi.ibiomes.db.model.DBExperimentProcess;
+import edu.utah.bmi.ibiomes.db.model.DBExperimentProcessGroup;
 import edu.utah.bmi.ibiomes.db.model.DBExperimentTask;
 import edu.utah.bmi.ibiomes.db.model.method.DBBarostat;
 import edu.utah.bmi.ibiomes.db.model.method.DBBasisSet;
@@ -85,63 +86,71 @@ public class TestHibernateExperimentManager {
 				DBExperiment exp = (DBExperiment) experiments.get(i);
 		        logger.info("EXPERIMENT [" + exp.getId() + "]: " + exp.getName());
 		        
-		        List<DBExperimentProcess> processes = exp.getProcesses();
-				for (int p = 0; p < processes.size(); p++) {
-					DBExperimentProcess process = (DBExperimentProcess) processes.get(p);
-			        logger.info("   PROCESS [" + process.getId() + "]");
-					if (process.getDescription()!=null)
-				        logger.debug("      Description: " + process.getDescription());
-	
-					getMolecularSystemInfo(process.getMolecularSystem());
+		        List<DBExperimentProcessGroup> processGroups = exp.getProcessGroups();
+				for (int g = 0; g < processGroups.size(); g++) {
+					DBExperimentProcessGroup processGroup = (DBExperimentProcessGroup) processGroups.get(g);
+			        logger.info("   PROCESS GROUP [" + processGroup.getId() + "]");
+					if (processGroup.getDescription()!=null)
+				        logger.debug("      Description: " + processGroup.getDescription());
+			        
+					getMolecularSystemInfo(processGroup.getMolecularSystem());
 					
-			        List<DBExperimentTask> tasks = process.getTasks();
-					for (int t = 0; t < tasks.size(); t++) {
-						DBExperimentTask task = (DBExperimentTask) tasks.get(t);
-				        logger.info("      TASK [" + task.getId() + "]");
-				        
-				        if (task.getDescription()!=null)
-				        	logger.info("           Description: " + task.getDescription());
-				        if (task.getSoftware()!=null)
-				        	logger.info("           Software: " + task.getSoftware().getName() + " (" + task.getSoftware().getVersion() + ")");
-				        
-				        if (task.getConditionSet()!=null){
-				        	logger.info("           Temperature: " + task.getConditionSet().getReferenceTemperature() + " K");
-				        	logger.info("           Pressure:    " + task.getConditionSet().getReferencePressure() + " bar");
-				        }
-				        //Molecular dynamics task
-				        if (task instanceof DB_MDTask){
-				        	logger.info("           Method: MD");
-				        	DB_MDTask mdTask = (DB_MDTask)task;
-				        	getMdInfo(mdTask.getMdParameterSet());
-				        }
-				        //Minimization task
-				        else if (task instanceof DBMinimizationTask){
-				        	logger.info("           Method: Minimization");
-				        	DBMinimizationTask minTask = (DBMinimizationTask)task;
-				        	getMinimizationInfo(minTask.getMinimizationParameterSet());
-				        }
-				        //QM task
-				        else if (task instanceof DB_QMTask){
-				        	logger.info("           Method: QM");
-				        	DB_QMTask qmTask = (DB_QMTask)task;
-				        	getQmInfo(qmTask.getQmParameterSet());
-				        }
-				        //QM/MM task
-				        else if (task instanceof DB_QMMMTask){
-				        	logger.debug("           Method: QM/MM");
-				        	DB_QMMMTask qmmmTask = (DB_QMMMTask)task;
-				        	getQmmmInfo(qmmmTask.getQmmmParameterSet());
-				        	getMdInfo(qmmmTask.getMdParameterSet());
-				        	getQmInfo(qmmmTask.getQmParameterSet());
-				        }
-				        
-				        //calculations
-				        if (task.getCalculations()!=null){
-			    			for (DBCalculation calculation : task.getCalculations()){
-			    				logger.info("           Calculation: " + calculation.getName());
-			    			}
-			    		}
-				    }
+			        List<DBExperimentProcess> processes = processGroup.getProcesses();
+					for (int p = 0; p < processes.size(); p++) {
+						DBExperimentProcess process = (DBExperimentProcess) processes.get(p);
+				        logger.info("   PROCESS [" + process.getId() + "]");
+						if (process.getDescription()!=null)
+					        logger.debug("      Description: " + process.getDescription());
+		
+				        List<DBExperimentTask> tasks = process.getTasks();
+						for (int t = 0; t < tasks.size(); t++) {
+							DBExperimentTask task = (DBExperimentTask) tasks.get(t);
+					        logger.info("      TASK [" + task.getId() + "]");
+					        
+					        if (task.getDescription()!=null)
+					        	logger.info("           Description: " + task.getDescription());
+					        if (task.getSoftware()!=null)
+					        	logger.info("           Software: " + task.getSoftware().getName() + " (" + task.getSoftware().getVersion() + ")");
+					        
+					        if (task.getConditionSet()!=null){
+					        	logger.info("           Temperature: " + task.getConditionSet().getReferenceTemperature() + " K");
+					        	logger.info("           Pressure:    " + task.getConditionSet().getReferencePressure() + " bar");
+					        }
+					        //Molecular dynamics task
+					        if (task instanceof DB_MDTask){
+					        	logger.info("           Method: MD");
+					        	DB_MDTask mdTask = (DB_MDTask)task;
+					        	getMdInfo(mdTask.getMdParameterSet());
+					        }
+					        //Minimization task
+					        else if (task instanceof DBMinimizationTask){
+					        	logger.info("           Method: Minimization");
+					        	DBMinimizationTask minTask = (DBMinimizationTask)task;
+					        	getMinimizationInfo(minTask.getMinimizationParameterSet());
+					        }
+					        //QM task
+					        else if (task instanceof DB_QMTask){
+					        	logger.info("           Method: QM");
+					        	DB_QMTask qmTask = (DB_QMTask)task;
+					        	getQmInfo(qmTask.getQmParameterSet());
+					        }
+					        //QM/MM task
+					        else if (task instanceof DB_QMMMTask){
+					        	logger.debug("           Method: QM/MM");
+					        	DB_QMMMTask qmmmTask = (DB_QMMMTask)task;
+					        	getQmmmInfo(qmmmTask.getQmmmParameterSet());
+					        	getMdInfo(qmmmTask.getMdParameterSet());
+					        	getQmInfo(qmmmTask.getQmParameterSet());
+					        }
+					        
+					        //calculations
+					        if (task.getCalculations()!=null){
+				    			for (DBCalculation calculation : task.getCalculations()){
+				    				logger.info("           Calculation: " + calculation.getName());
+				    			}
+				    		}
+					    }
+					}
 			    }
 				logger.debug("----------------------------------------------");
 		    }

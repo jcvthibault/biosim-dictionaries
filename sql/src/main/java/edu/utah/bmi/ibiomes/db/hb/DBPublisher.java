@@ -33,6 +33,7 @@ import edu.utah.bmi.ibiomes.db.model.DBCitation;
 import edu.utah.bmi.ibiomes.db.model.DBComputingEnvironment;
 import edu.utah.bmi.ibiomes.db.model.DBExperiment;
 import edu.utah.bmi.ibiomes.db.model.DBExperimentProcess;
+import edu.utah.bmi.ibiomes.db.model.DBExperimentProcessGroup;
 import edu.utah.bmi.ibiomes.db.model.DBExperimentTask;
 import edu.utah.bmi.ibiomes.db.model.DBExperimentTaskExecution;
 import edu.utah.bmi.ibiomes.db.model.DBFileSystem;
@@ -124,15 +125,15 @@ public class DBPublisher {
 	        	}
 	        }
 	        
-	        //processes
-	        List<DBExperimentProcess> processes = experiment.getProcesses();
-	        if (processes != null){
-	        	List<DBExperimentProcess> updatedProcesses = new ArrayList<DBExperimentProcess>();
-	        	for (DBExperimentProcess process : processes){
-	        		DBExperimentProcess updatedProcess = publishExperimentProcess(process);
-	        		updatedProcesses.add(updatedProcess);
+	        //process groups
+	        List<DBExperimentProcessGroup> processGroups = experiment.getProcessGroups();
+	        if (processGroups != null){
+	        	List<DBExperimentProcessGroup> updatedProcessGroups = new ArrayList<DBExperimentProcessGroup>();
+	        	for (DBExperimentProcessGroup processGroup : processGroups){
+	        		DBExperimentProcessGroup updatedProcessGroup = publishExperimentProcessGroup(processGroup);
+	        		updatedProcessGroups.add(updatedProcessGroup);
 	        	}
-	        	experiment.setProcesses(updatedProcesses);
+	        	experiment.setProcessGroups(updatedProcessGroups);
 	        }
 
 	        //experiment
@@ -154,6 +155,54 @@ public class DBPublisher {
 	}
 	
 	/**
+	 * Add experiment process group information to database
+	 * @param process Process
+	 * @return Process
+	 */
+	public DBExperimentProcessGroup publishExperimentProcessGroup(DBExperimentProcessGroup group)
+	{
+		Session session = null;
+		Transaction tx = null;
+
+		//molecular system
+		DBMolecularSystem system = group.getMolecularSystem();
+        if (system!=null){
+        	DBMolecularSystem updatedSystem = publishMolecularSystem(system);
+        	group.setMolecularSystem(updatedSystem);
+        }
+        
+		//set proceses
+		List<DBExperimentProcess> processes = group.getProcesses();
+		if (processes != null){
+        	List<DBExperimentProcess> updatedProcesses = new ArrayList<DBExperimentProcess>();
+        	for (DBExperimentProcess process : processes){
+        		DBExperimentProcess updatedProcess = publishExperimentProcess(process);
+        		updatedProcesses.add(updatedProcess);
+        	}
+        	group.setProcesses(updatedProcesses);
+        }
+		
+		try{
+			session = sessionFactory.openSession();
+	        tx= session.beginTransaction();
+	        
+	        session.save(group);
+	        tx.commit();
+	        session.close();
+	        
+	        return group;
+		}
+		catch (Exception e){
+			e.printStackTrace();
+			tx.rollback();
+			return group;
+        }finally{
+        	if (session.isOpen())
+        		session.close();
+        }
+	}
+	
+	/**
 	 * Add experiment process information to database
 	 * @param process Process
 	 * @return Process
@@ -162,13 +211,6 @@ public class DBPublisher {
 	{
 		Session session = null;
 		Transaction tx = null;
-
-		//molecular system
-		DBMolecularSystem system = process.getMolecularSystem();
-        if (system!=null){
-        	DBMolecularSystem updatedSystem = publishMolecularSystem(system);
-        	process.setMolecularSystem(updatedSystem);
-        }
         
 		//set tasks
 		List<DBExperimentTask> tasks = process.getTasks();

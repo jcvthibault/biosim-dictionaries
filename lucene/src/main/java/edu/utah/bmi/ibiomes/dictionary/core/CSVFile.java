@@ -95,7 +95,6 @@ public class CSVFile
 		}
 	}
 	
-	
 	/**
 	 * Try to read the header of the file (if its a CSV file)
 	 * @return List of column labels
