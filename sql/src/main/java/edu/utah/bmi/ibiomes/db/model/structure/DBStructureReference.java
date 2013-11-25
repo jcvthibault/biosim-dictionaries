@@ -39,6 +39,7 @@ public class DBStructureReference {
 	private Long id;
 	private String database;
 	private String entryId;
+	private String preparationProtocol;
 
 	public DBStructureReference(){}
 
@@ -53,4 +54,9 @@ public class DBStructureReference {
 	@Column(name="entry_id")
 	public String getEntryId() {return entryId;}
 	public void setEntryId(String entryId) {this.entryId = entryId;}
+
+	@Column(name="preparation_protocol")
+	public String getPreparationProtocol() {return preparationProtocol;}
+	public void setPreparationProtocol(String preparationProtocol) {this.preparationProtocol = preparationProtocol;}
+
 }

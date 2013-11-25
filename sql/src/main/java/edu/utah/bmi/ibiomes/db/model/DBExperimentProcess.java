@@ -19,6 +19,7 @@
 package edu.utah.bmi.ibiomes.db.model;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -28,14 +29,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import org.hibernate.annotations.NotFound;
-import org.hibernate.annotations.NotFoundAction;
-
-import edu.utah.bmi.ibiomes.db.model.structure.DBMolecularSystem;
 
 /**
  * Experiment process
@@ -50,6 +47,7 @@ public class DBExperimentProcess {
 	private String name;
 	private String description;
 	private List<DBExperimentTask> tasks;
+	private Set<DBExperimentProcess> dependencies;
 
 	public DBExperimentProcess(){
 	}
@@ -70,5 +68,14 @@ public class DBExperimentProcess {
 	@JoinColumn(name="process_id")
 	public List<DBExperimentTask> getTasks() {return tasks;}
 	public void setTasks(List<DBExperimentTask> tasks) {this.tasks = tasks;}
+	
+	@ManyToMany
+	@JoinTable(
+            name="EXPERIMENT_PROCESS_DEPENDENCY",
+            joinColumns = @JoinColumn( name="dep_from"),
+            inverseJoinColumns = @JoinColumn(name="dep_to")
+    )
+	public Set<DBExperimentProcess> getDependencies() {return dependencies;}
+	public void setDependencies(Set<DBExperimentProcess> dependencies) {this.dependencies = dependencies;}
 
 }

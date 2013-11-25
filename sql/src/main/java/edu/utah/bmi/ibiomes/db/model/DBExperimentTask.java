@@ -18,6 +18,7 @@
 
 package edu.utah.bmi.ibiomes.db.model;
 
+import java.util.List;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -30,6 +31,8 @@ import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -66,6 +69,7 @@ public class DBExperimentTask {
 	private DBSimulatedConditionSet conditionSet;
 	private Set<DBCalculation> calculations;
 	private DBExperimentTaskExecution taskExecution;
+	private Set<DBExperimentTask> dependencies;
 
 	public DBExperimentTask(){
 	}
@@ -125,5 +129,14 @@ public class DBExperimentTask {
 	@NotFound(action = NotFoundAction.IGNORE)
 	public DBExperimentTaskExecution getTaskExecution() {return taskExecution;}
 	public void setTaskExecution(DBExperimentTaskExecution taskExecution) {this.taskExecution = taskExecution;}
+	
+	@ManyToMany
+	@JoinTable(
+            name="EXPERIMENT_TASK_DEPENDENCY",
+            joinColumns = @JoinColumn( name="dep_from"),
+            inverseJoinColumns = @JoinColumn(name="dep_to")
+    )
+	public Set<DBExperimentTask> getDependencies() {return dependencies;}
+	public void setDependencies(Set<DBExperimentTask> dependencies) {this.dependencies = dependencies;}
 
 }

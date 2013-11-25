@@ -19,6 +19,7 @@
 package edu.utah.bmi.ibiomes.db.model;
 
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -28,6 +29,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -52,6 +55,7 @@ public class DBExperimentProcessGroup {
 	private String description;
 	private DBMolecularSystem molecularSystem;
 	private List<DBExperimentProcess> processes;
+	private Set<DBExperimentProcessGroup> dependencies;
 
 	public DBExperimentProcessGroup(){
 	}
@@ -78,5 +82,14 @@ public class DBExperimentProcessGroup {
 	@JoinColumn(name="process_group_id")
 	public List<DBExperimentProcess> getProcesses() {return processes;}
 	public void setProcesses(List<DBExperimentProcess> processes) {this.processes = processes;}
+
+	@ManyToMany
+	@JoinTable(
+            name="EXPERIMENT_PROCESS_GROUP_DEPENDENCY",
+            joinColumns = @JoinColumn( name="dep_from"),
+            inverseJoinColumns = @JoinColumn(name="dep_to")
+    )
+	public Set<DBExperimentProcessGroup> getDependencies() {return dependencies;}
+	public void setDependencies(Set<DBExperimentProcessGroup> dependencies) {this.dependencies = dependencies;}
 
 }
