@@ -43,7 +43,6 @@ This folder (we will call it $BIOSIM_REPO) contains the following sub-directorie
  - [data/csv] CSV files containing the dictionary data
  - [lucene] Java API to build and use the Lucene-based dictionaries
  - [lucene/scripts] Scripts to build and test the Lucene indexes.
- - [parent]Maven parent project for lucene/, sql/, and web/ 
  - [sql] Hibernate mappings (Java/SQL) for the database
  - [sql/scripts] Scripts to create and populate the SQL tables
  - [uml] UML logical (Java) and physical (MySQL) models
@@ -115,7 +114,7 @@ To test the dictionary lookups:
 Make sure you read the previous sections first.
 To compile: 
 
-	cd $BIOSIM_REPO/parent
+	cd $BIOSIM_REPO
 	mvn install 
 
 
