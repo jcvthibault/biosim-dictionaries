@@ -17,7 +17,7 @@ ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
 17,"Correlation coefficient calculation","Calculate correlation coefficient between data sets.",,analysis_algorithm
 18,"Diffusion calculation","Calculate the mean-squared displacements vs. frame number.",,analysis_algorithm
 19,"Dihedral calculation","Calculate the dihedral values from the center of mass of the four specified atom masks.",,analysis_algorithm
-20,"Distance calculation","Calculate the distance in Å between the center of mass of the two atom specifications listed.",,analysis_algorithm
+20,"Distance calculation","Calculate the distance in between the center of mass of the two atom specifications listed.",,analysis_algorithm
 21,"Distance RMSD","Calculate distance RMSD (also known as DME).",,analysis_algorithm
 22,"Density grid","Create a density grid that has a count of the number of selected atoms in each grid cell.",,analysis_algorithm
 23,"Hydrogen bond analysis","Keeps track of hydrogen bond distances",,analysis_algorithm
@@ -42,7 +42,7 @@ ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
 43,"Nucleic acid y-displacement","Calculate y-displacement parameter for nucleic acid structures",,analysis_algorithm
 44,"Principal axis alignment","Align to the principal coordinate axis.",,analysis_algorithm
 45,"Coordinate projection","Project coordinates along previously calculated eigenmodes.",,analysis_algorithm
-46,"Pucker","Compute the pucker for 5-membered rings.",,analysis_algorithm
+46,"Pucker","Compute the pucker for N-membered rings.",,analysis_algorithm
 47,"Gyration radius","Determine the radius of gyration for each frame.",,analysis_algorithm
 48,"Radial distribution","Compute a radial distribution function.",,analysis_algorithm
 49,"RMSd","Compute the RMSd to the first frame or a reference frame.",,analysis_algorithm
@@ -50,14 +50,15 @@ ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
 51,"Running average","Calculate the running average of coordinates over a given window size.",,analysis_algorithm
 52,"Secondary structure","Determine the secondary structure of proteins.",,analysis_algorithm
 53,"Secondary structure changes","Count the number of secondary structure changes occurring in the trajectory.",,analysis_algorithm
-54,"LCPO surface area","Calculate the LCPO surface area.",,analysis_algorithm
 55,"PCA","Principal component analysis",,analysis_algorithm
-56,"NOE","Calculate NMR observables",,analysis_algorithm
+56,"NOE","Calculate NMR Nuclear Overhauser Effect","Anderson, W. A.; Freeman, R. (1962). 'Influence of a Second Radiofrequency Field on High-Resolution Nuclear Magnetic Resonance Spectra'. The Journal of Chemical Physics 37 (1): 411-5",analysis_algorithm
 57,"Water shell","Determine how many solvent models are within a given radius of the solute.",,analysis_algorithm
 58,"Coarse-Grained Elastic Mesoscopic Model Flexibility","Coarse-Grained elastic mesoscopic model flexibility analysis",,analysis_algorithm
 59,"Coarse-Grained Worm-like Chain Model Flexibility","Coarse-Grained worm-like chain model flexibility analysis",,analysis_algorithm
 60,"Ramachandran Plot","Generate Ramachandran plots to identifying mobile residues in the secondary structure",,analysis_algorithm
 61,"SAS","Solvent-accessible surface calculation",,analysis_algorithm
-62,"TM-score","Calculate the structural similarity of two protein models using TM-score algorithm",,analysis_algorithm
-63,"MM-PBSA","Predict binding free energies using the Molecular Mechanics/Poisson-Boltzmann Surface Area (MM/PBSA) method",,analysis_algorithm
-64,"MM-GBSA","Predict binding free energies using the Molecular Mechanics/Generalized Born Surface Area (MM/GBSA) method",,analysis_algorithm
+62,"LCPO SAS","Calculate the surface area from linear combinations of pairwise overlaps.","Weiser J, Shenkin PS, Still WC (1999). 'Approximate atomic surfaces from linear combinations of pairwise overlaps (LCPO)'. Journal of Computational Chemistry 20 (2): 217-230.",analysis_algorithm
+63,"Shrake-Rupley SAS","Solvent-accessible surface calculation using Shrake-Rupley algorithm","Shrake, A; Rupley, JA. (1973). 'Environment and exposure to solvent of protein atoms. Lysozyme and insulin'. J Mol Biol 79 (2):351-71.",analysis_algorithm
+64,"TM-score","Calculate the structural similarity of two protein models using TM-score algorithm","Zhang Y and Skolnick J (2004). 'Scoring function for automated assessment of protein structure template quality'. Proteins 57 (4): 702-710.",analysis_algorithm
+65,"MM-PBSA","Predict binding free energies using the Molecular Mechanics/Poisson-Boltzmann Surface Area (MM/PBSA) method",,analysis_algorithm
+66,"MM-GBSA","Predict binding free energies using the Molecular Mechanics/Generalized Born Surface Area (MM/GBSA) method",,analysis_algorithm
