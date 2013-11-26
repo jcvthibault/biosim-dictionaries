@@ -126,7 +126,6 @@ $(document).ready(function() {
 	<br/>
 	<!-- content-wrap starts here -->
 	<div id="content-wrap"><div id="content">
-			
 		<div id="sidebar" >
 			<div class="sidebox">	
 				<h1 class="clear">Browse</h1>
@@ -148,6 +147,7 @@ $(document).ready(function() {
 					<li><a class="link" href="list?name=ensemble">Ensemble types</a></li>
 					<li><a class="link" href="list?name=constraint_algorithm">Constraint algorithms</a></li>
 					<li><a class="link" href="list?name=data_generating_method">Data generating methods</a></li>
+					<li><a class="link" href="list?name=analysis_algorithm">Analysis methods</a></li>
 				</ul>
 				<p><strong>Structural and chemical information</strong></p>
 				<ul class="sidemenu">
@@ -162,8 +162,7 @@ $(document).ready(function() {
 					<li><a class="link" href="list?name=file_format">Chemical file formats</a></li>
 				</ul>
 			</div>
-		</div>	
-		
+		</div>
 	<div id="main">
 	
 	<div class="post">

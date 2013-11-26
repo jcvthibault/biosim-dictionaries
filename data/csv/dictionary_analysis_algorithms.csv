@@ -1,0 +1,63 @@
+ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
+1,"2D-RMSd","Calculate two-dimensional RMSD (i.e. RMSD of each frame to every other frame).",,analysis_algorithm
+2,"Matrix diagonalization","Diagonalize a previously calculated symmetric matrix to obtain eigenmodes.",,analysis_algorithm
+3,"Eigenmode analysis","Analyze previously calculated eigenmodes.",,analysis_algorithm
+4,"Auto correlation","Calculate auto correlation functions for previously calculated vectors.",,analysis_algorithm
+5,"Time cross correlation","Calculate time cross functions for previously calculated vectors.",,analysis_algorithm
+6,"Atom triplet angle calculation","Compute the angle in degrees between the center of mass of the three atom specifications listed.",,analysis_algorithm
+7,"B-factor","Compute the atomic positional fluctuations (RMSF) or B-factors",,analysis_algorithm
+8,"Atom map","Attempt to map atoms between two reference structures based on overall structure and bonding.",,analysis_algorithm
+9,"Coordinate average","Compute the straight coordinate average of the coordinate sets read in.",,analysis_algorithm
+10,"Atom neighbors","Look for atoms that are closer (and optionally further separated than) a specified distance.",,analysis_algorithm
+11,"Structural check","Check for close atomic overlaps and/or unusual bond lengths in structures.",,analysis_algorithm
+12,"Structure clustering","Group configurations from the MD trajectory into distinct sets.",,analysis_algorithm
+13,"Structure clustering with dihedral binning","Group configurations from the MD trajectory by binning dihedral angles",,analysis_algorithm
+15,"Atom interaction count","Find the number of atom interactions (and native contacts) within a given distance.",,analysis_algorithm
+16,"Native contact losses","Count the number of native contacts that were lost",,analysis_algorithm
+17,"Correlation coefficient calculation","Calculate correlation coefficient between data sets.",,analysis_algorithm
+18,"Diffusion calculation","Calculate the mean-squared displacements vs. frame number.",,analysis_algorithm
+19,"Dihedral calculation","Calculate the dihedral values from the center of mass of the four specified atom masks.",,analysis_algorithm
+20,"Distance calculation","Calculate the distance in Å between the center of mass of the two atom specifications listed.",,analysis_algorithm
+21,"Distance RMSD","Calculate distance RMSD (also known as DME).",,analysis_algorithm
+22,"Density grid","Create a density grid that has a count of the number of selected atoms in each grid cell.",,analysis_algorithm
+23,"Hydrogen bond analysis","Keeps track of hydrogen bond distances",,analysis_algorithm
+24,"Hydrogen bond interaction energies","Analyze hydrogen bond interaction energies",,analysis_algorithm
+25,"Base pair stacking energies","Analyze base pair stacking energies",,analysis_algorithm
+27,"J-coupling","Calculate j-coupling values from dihedral angles.",,analysis_algorithm
+28,"Connolly surface area","Calculate the Connolly surface area.",,analysis_algorithm
+29,"Nucleic acid structure parameters","Calculate various nucleic-acid structure parameters.",,analysis_algorithm
+30,"Nucleic acid shear","Calculate shear parameter for nucleic acid structures",,analysis_algorithm
+31,"Nucleic acid stretch","Calculate stretch parameter for nucleic acid structures",,analysis_algorithm
+32,"Nucleic acid stagger","Calculate stagger parameter for nucleic acid structures",,analysis_algorithm
+33,"Nucleic acid buckle","Calculate buckle parameter for nucleic acid structures",,analysis_algorithm
+34,"Nucleic acid propel","Calculate propel parameter for nucleic acid structures",,analysis_algorithm
+35,"Nucleic acid opening","Calculate opening parameter for nucleic acid structures",,analysis_algorithm
+36,"Nucleic acid shift","Calculate shift parameter for nucleic acid structures",,analysis_algorithm
+37,"Nucleic acid slide","Calculate slide parameter for nucleic acid structures",,analysis_algorithm
+38,"Nucleic acid rise","Calculate rise parameter for nucleic acid structures",,analysis_algorithm
+39,"Nucleic acid tilt","Calculate tilt parameter for nucleic acid structures",,analysis_algorithm
+40,"Nucleic acid roll","Calculate roll parameter for nucleic acid structures",,analysis_algorithm
+41,"Nucleic acid twist","Calculate twist parameter for nucleic acid structures",,analysis_algorithm
+42,"Nucleic acid x-displacement","Calculate x-displacement parameter for nucleic acid structures",,analysis_algorithm
+43,"Nucleic acid y-displacement","Calculate y-displacement parameter for nucleic acid structures",,analysis_algorithm
+44,"Principal axis alignment","Align to the principal coordinate axis.",,analysis_algorithm
+45,"Coordinate projection","Project coordinates along previously calculated eigenmodes.",,analysis_algorithm
+46,"Pucker","Compute the pucker for 5-membered rings.",,analysis_algorithm
+47,"Gyration radius","Determine the radius of gyration for each frame.",,analysis_algorithm
+48,"Radial distribution","Compute a radial distribution function.",,analysis_algorithm
+49,"RMSd","Compute the RMSd to the first frame or a reference frame.",,analysis_algorithm
+50,"RMSd correlation","Calculate RMSD correlation from the average RMSD of running-averaged coordinates over increasing window sizes.",,analysis_algorithm
+51,"Running average","Calculate the running average of coordinates over a given window size.",,analysis_algorithm
+52,"Secondary structure","Determine the secondary structure of proteins.",,analysis_algorithm
+53,"Secondary structure changes","Count the number of secondary structure changes occurring in the trajectory.",,analysis_algorithm
+54,"LCPO surface area","Calculate the LCPO surface area.",,analysis_algorithm
+55,"PCA","Principal component analysis",,analysis_algorithm
+56,"NOE","Calculate NMR observables",,analysis_algorithm
+57,"Water shell","Determine how many solvent models are within a given radius of the solute.",,analysis_algorithm
+58,"Coarse-Grained Elastic Mesoscopic Model Flexibility","Coarse-Grained elastic mesoscopic model flexibility analysis",,analysis_algorithm
+59,"Coarse-Grained Worm-like Chain Model Flexibility","Coarse-Grained worm-like chain model flexibility analysis",,analysis_algorithm
+60,"Ramachandran Plot","Generate Ramachandran plots to identifying mobile residues in the secondary structure",,analysis_algorithm
+61,"SAS","Solvent-accessible surface calculation",,analysis_algorithm
+62,"TM-score","Calculate the structural similarity of two protein models using TM-score algorithm",,analysis_algorithm
+63,"MM-PBSA","Predict binding free energies using the Molecular Mechanics/Poisson-Boltzmann Surface Area (MM/PBSA) method",,analysis_algorithm
+64,"MM-GBSA","Predict binding free energies using the Molecular Mechanics/Generalized Born Surface Area (MM/GBSA) method",,analysis_algorithm

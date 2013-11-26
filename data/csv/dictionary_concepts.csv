@@ -55,3 +55,4 @@ ID,ID_STR,TERM,DESCRIPTION,ATTRIBUTE_TYPE
 54,"thermostat","Thermostat","Temperature control","concept"
 55,,"Time step","Time step","concept"
 56,,"Unit shape","Unit shape","concept"
+57,"analysis_algorithm","Analysis algorithm","Analysis algorithm.","concept"

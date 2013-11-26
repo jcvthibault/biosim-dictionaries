@@ -15,9 +15,9 @@
   </properties>
 
   <modules>
-	<module>../lucene</module>
-	<module>../sql</module>
-	<module>../web</module>
+	<module>lucene</module>
+	<module>sql</module>
+	<module>web</module>
   </modules>
   
   <build>
