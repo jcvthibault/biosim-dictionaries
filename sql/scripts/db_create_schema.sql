@@ -1083,6 +1083,8 @@ CREATE TABLE TASK_EXECUTION
 	normal_termination BOOL,
 	number_of_cpus INTEGER,
 	number_of_gpus INTEGER,
+	start_timestamp INTEGER,
+	end_timestamp INTEGER,
 	PRIMARY KEY (id),
 	UNIQUE UQ_TASK_EXECUTION_id(id)
 ) 
