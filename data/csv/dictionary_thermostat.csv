@@ -1,8 +1,8 @@
 ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
-1,"Andersen","Andersen thermostat",,thermostat
-2,"Berendsen","Berendsen thermostat",,thermostat
+1,"Andersen","Andersen thermostat","H.C. Andersen, J. Chem. Phys. 72, 2384 (1980)",thermostat
+2,"Berendsen","Berendsen thermostat","H.J.C. Berendsen et al., J. Chem. Phys. 81, 3684 (1984)",thermostat
 3,"Langevin","Langevin thermostat",,thermostat
-4,"V-rescale","V-rescale thermostat",,thermostat
+4,"V-rescale","V-rescale thermostat","G. Bussi, D. Donadio and M. Parrinello, Canonical sampling through velocity-rescaling, J. Chem. Phys. 126, 014101 (2007)",thermostat
 5,"Nose","Nose thermostat",,thermostat
-6,"Nose-Hoover","Nose-Hoover thermostat",,thermostat
+6,"Nose-Hoover","Nose-Hoover thermostat","Hoover, Phys. Rev. A 31 (1985) 1695",thermostat
 7,"Nose-Poincare","Nose-Poincare thermostat",,thermostat

@@ -37,8 +37,10 @@ public class DBExperimentTaskExecution {
 	private Long id;
 	private double time;
 	private boolean normalTermination;
-	private Integer numbeOfCPUs;
-	private Integer numbeOfGPUs;
+	private Integer numberOfCPUs;
+	private Integer numberOfGPUs;
+	private Long startTimestamp;
+	private Long endTimestamp;
 
 	public DBExperimentTaskExecution(){
 	}
@@ -56,10 +58,18 @@ public class DBExperimentTaskExecution {
 	public void setNormalTermination(boolean normalTermination) {this.normalTermination = normalTermination;}
 
 	@Column(name = "number_of_cpus")
-	public int getNumbeOfCPUs() {return numbeOfCPUs;}
-	public void setNumbeOfCPUs(int numbeOfCPUs) {this.numbeOfCPUs = numbeOfCPUs;}
+	public int getNumbeOfCPUs() {return numberOfCPUs;}
+	public void setNumbeOfCPUs(int numberOfCPUs) {this.numberOfCPUs = numberOfCPUs;}
 
 	@Column(name = "number_of_gpus")
-	public int getNumbeOfGPUs() {return numbeOfGPUs;}
-	public void setNumbeOfGPUs(int numbeOfGPUs) {this.numbeOfGPUs = numbeOfGPUs;}
+	public int getNumbeOfGPUs() {return numberOfGPUs;}
+	public void setNumbeOfGPUs(int numberOfGPUs) {this.numberOfGPUs = numberOfGPUs;}
+
+	@Column(name = "start_timestamp")
+	public Long getStartTimestamp() {return startTimestamp;}
+	public void setStartTimestamp(Long startTimestamp) {this.startTimestamp = startTimestamp;}
+
+	@Column(name = "end_timestamp")
+	public Long getEndTimestamp() {return endTimestamp;}
+	public void setEndTimestamp(Long endTimestamp) {this.endTimestamp = endTimestamp;}
 }

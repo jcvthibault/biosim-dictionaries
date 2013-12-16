@@ -1,5 +1,5 @@
 ID,TERM,DESCRIPTION,CITATION,ATTRIBUTE_TYPE
-1,"Andersen","Andersen barostat",,barostat
-2,"Berendsen","Berendsen barostat",,barostat
+1,"Andersen","Andersen barostat","H.C. Andersen, J. Chem. Phys. 72, 2384 (1980)",barostat
+2,"Berendsen","Berendsen barostat","H.J.C. Berendsen et al., J. Chem. Phys. 81, 3684 (1984)",barostat
 3,"Hoover","Hoover barostat",,barostat
-4,"Parinello-Rahman","Parinello-Rahman barostat",,barostat
+4,"Parinello-Rahman","Parinello-Rahman barostat","M. Parinello and A. Rahman, J. Appl. Phys 52, 7182 (1981)",barostat

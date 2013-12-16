@@ -42,6 +42,8 @@ import edu.utah.bmi.ibiomes.dictionary.core.CSVFile;
  */
 public class LuceneDictionaryBuilder {
 
+	public final static String PATH_FOLDER_SEPARATOR  = ((System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) ? "\\" : "/");
+	
 	public LuceneDictionaryBuilder() {
 	}
 
@@ -113,7 +115,7 @@ public class LuceneDictionaryBuilder {
 		int docCount = 0;
 		IndexWriter writer = null;
 		
-		String indexFilePath = outputDir.getAbsolutePath() + "/dictionary_all";
+		String indexFilePath = outputDir.getAbsolutePath() + PATH_FOLDER_SEPARATOR + "dictionary_all";
 		File indexFile = new File(indexFilePath);
 		try {
 			Directory dir = FSDirectory.open(indexFile);
@@ -178,10 +180,10 @@ public class LuceneDictionaryBuilder {
 		String[] headers = csvFile.getHeaders();
 
 		String csvFileName = csvFile.getAbsolutePath().substring(0,csvFile.getAbsolutePath().length()-4);
-		if (csvFileName.indexOf('/')>-1)
-			csvFileName = csvFileName.substring(csvFileName.lastIndexOf('/')+1,csvFileName.length());
+		if (csvFileName.indexOf(PATH_FOLDER_SEPARATOR)>-1)
+			csvFileName = csvFileName.substring(csvFileName.lastIndexOf(PATH_FOLDER_SEPARATOR)+1,csvFileName.length());
 		
-		String indexFilePath = outputDir.getAbsolutePath() + "/" + csvFileName;
+		String indexFilePath = outputDir.getAbsolutePath() + PATH_FOLDER_SEPARATOR + csvFileName;
 		File indexFile = new File(indexFilePath);
 		try {
 			Directory dir = FSDirectory.open(indexFile);
