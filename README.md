@@ -38,7 +38,7 @@ as database tables. The scripts create a database schema and populate the new
 tables with the CSV data.
 
 ## Directory structure 
-This folder (we will call it $BIOSIM_REPO) contains the following sub-directories:
+This folder (we will call it $BIOSIM_REPO_HOME) contains the following sub-directories:
  - [config] Configuration files to edit before API use. These files specify the SQL connection parameters and the Lucene-related parameters) 
  - [data/csv] CSV files containing the dictionary data
  - [lucene] Java API to build and use the Lucene-based dictionaries
@@ -57,13 +57,13 @@ This folder (we will call it $BIOSIM_REPO) contains the following sub-directorie
 ### Installation
 Copy the CSV files to the /tmp directory so that MySQL can read files:
 
-	cp -f $BIOSIM_REPO/data/csv/* /tmp/
+	cp -f $BIOSIM_REPO_HOME/data/csv/* /tmp/
 
  
 To create the tables and populate the data, source 'db_all.sql' in MySQL. First go
 to the scripts directory:
 
-	cd $BIOSIM_REPO/sql/scripts/
+	cd $BIOSIM_REPO_HOME/sql/scripts/
 
 Then source the SQL script with something like:
 
@@ -75,7 +75,7 @@ If you only want to create the dictionary tables, source 'biosim_dict_all.sql':
 
 To compile the Java API (Hibernate mappings):
 
-	cd $BIOSIM_REPO/sql
+	cd $BIOSIM_REPO_HOME/sql
 	mvn install
 
 ## Creating the Lucene-based dictionaries
@@ -86,14 +86,14 @@ To compile the Java API (Hibernate mappings):
 ### Installation
 To compile the Java API:
 
-	cd $BIOSIM_REPO/lucene
+	cd $BIOSIM_REPO_HOME/lucene
 	mvn package
 
-A JAR file containing all the compiled classes should be created in $BIOSIM_REPO/lucene/target/biosim-dictionary-lucene-api.jar
+A JAR file containing all the compiled classes should be created in $BIOSIM_REPO_HOME/lucene/target/biosim-dictionary-lucene-api.jar
  
 To build the Lucene indexes:
 
-	cd $BIOSIM_REPO/lucene
+	cd $BIOSIM_REPO_HOME/lucene
 	./scripts/lucene-build-dictionaries.sh <csv-dir> <output-dir>
 
 		<csv-dir> path to the folder containg all the CSV files representing the dictionary data
@@ -101,7 +101,7 @@ To build the Lucene indexes:
 
 To test the dictionary lookups:
 
-	cd $BIOSIM_REPO/lucene
+	cd $BIOSIM_REPO_HOME/lucene
 	./scripts/lucene-lookup.sh [options]
 
 	Options: lookup -i <index-path> -t <term> [-f <lookup-field>] [-n <max-hits>]
@@ -110,11 +110,34 @@ To test the dictionary lookups:
  lookup: lookup a term <term> in the Lucene index at <index-path> in a particular field <lookup-field>.
  list:   list all the entries in the Lucene index at <index-path>.
 
+## Dictionary web interface
+### Prerequisites
+ - Java 1.5+
+ - Apache Maven 2
+ - Java container (e.g. Apache Tomcat, JBoss)
+
+### Installation
+To compile the Java API and package into WAR file:
+
+	cd $BIOSIM_REPO_HOME/web
+	mvn install
+
+This will create a WAR file into the target/ directory. 
+To install:
+ - Build the Lucene-based dictionary (see above)
+ - Set the $BIOSIM_REPO_HOME environment variable
+ - Edit the $BIOSIM_REPO_HOME/config/biosim-dictionaries-lucene.properties to provide the absolute path of the Lucene index.
+ - Copy the WAR file into your web container, for example with Tomcat:
+
+	cp $BIOSIM_REPO_HOME/web/target/biosim-dictionary-web.war $CATALINA_HOME/webapps/
+
+Restart tyour web server if necessary.
+
 ## Building everything
 Make sure you read the previous sections first.
 To compile: 
 
-	cd $BIOSIM_REPO
+	cd $BIOSIM_REPO_HOME
 	mvn install 
 
 

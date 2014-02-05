@@ -1,6 +1,6 @@
 /*
  * iBIOMES - Integrated Biomolecular Simulations
- * Copyright (C) 2013  Julien Thibault, University of Utah
+ * Copyright (C) 2014  Julien Thibault, University of Utah
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -51,7 +51,6 @@ public class DB_MDParameterSet {
 	private Double timeStepLength;
 	private Integer numberOfTimeSteps;
 	private Double langevinCollisionFrequency;
-	private Double cutoffForNonbondedInteractions;
 	private Double cutoffForVanDerWaals;
 	private Double cutoffForElectrostatics;
 	private Set<DBForceField> forceFields;
@@ -87,10 +86,6 @@ public class DB_MDParameterSet {
 	@Column(name = "number_time_steps")
 	public Integer getNumberOfTimeSteps() {return numberOfTimeSteps;}
 	public void setNumberOfTimeSteps(Integer numberOfTimeSteps) {this.numberOfTimeSteps = numberOfTimeSteps;}
-
-	@Column(name = "cutoff_nonbonded")
-	public Double getCutoffForNonbondedInteractions() {return cutoffForNonbondedInteractions;}
-	public void setCutoffForNonbondedInteractions(Double cutoffForNonbondedInteractions) {this.cutoffForNonbondedInteractions = cutoffForNonbondedInteractions;}
 
 	@Column(name = "cutoff_vdw")
 	public Double getCutoffForVanDerWaals() {return cutoffForVanDerWaals;}

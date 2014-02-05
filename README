@@ -104,7 +104,32 @@ This folder (we will call it $BIOSIM_REPO) contains the following sub-directorie
  list:   list all the entries in the Lucene index at <index-path>.
 
 ====================================================
- III. BUILDING BOTH
+III. DICTIONARY WEB INTERFACE
+====================================================
+Prerequisites:
+ - Java 1.5+
+ - Apache Maven 2
+ - Java container (e.g. Apache Tomcat, JBoss)
+
+Installation
+To compile the Java API and package into WAR file:
+
+	cd $BIOSIM_REPO_HOME/web
+	mvn install
+
+This will create a WAR file into the target/ directory. 
+To install:
+ - Build the Lucene-based dictionary (see above)
+ - Set the $BIOSIM_REPO_HOME environment variable
+ - Edit the $BIOSIM_REPO_HOME/config/biosim-dictionaries-lucene.properties to provide the absolute path of the Lucene index.
+ - Copy the WAR file into your web container, for example with Tomcat:
+
+	cp $BIOSIM_REPO_HOME/web/target/biosim-dictionary-web.war $CATALINA_HOME/webapps/
+
+Restart tyour web server if necessary.
+
+====================================================
+ IV. BUILDING ALL
 ====================================================
 Make sure you read the previous sections first.
 To compile 

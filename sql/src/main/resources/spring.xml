@@ -18,7 +18,7 @@
 	<bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"> 
     	<property name="locations">
 		    <list>
-		        <value>file:${IBIOMES_HOME}/config/biosim-db.properties</value>
+		        <value>file:${BIOSIM_REPO_HOME}/config/biosim-db.properties</value>
 		    </list>
 		</property>
     </bean>
