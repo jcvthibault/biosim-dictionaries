@@ -6,6 +6,18 @@
 
 # ignore all target directories
 target/
+javadoc/
+bin/
 
 # ignore all files ending with ~
 *~ 
+*.swp
+
+# eclipse specific git ignore
+.project
+.metadata
+.classpath
+.settings/
+.loadpath
+
+
